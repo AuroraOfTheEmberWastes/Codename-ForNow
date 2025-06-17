@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PhonePullout : MonoBehaviour
 {
@@ -6,17 +7,12 @@ public class PhonePullout : MonoBehaviour
     public GameObject phone;
     public GameObject pullOutButton;
     public GameObject phoneOffButton;
+    public GameObject hungerUI;
+    public GameObject happinessUI;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         phoneOffButton.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void PullOut()
@@ -25,6 +21,8 @@ public class PhonePullout : MonoBehaviour
         animator.SetBool("pullOut", true);
         animator.SetBool("PhoneOff", false);
         phoneOffButton.SetActive(true);
+
+        StartCoroutine(PulloutEnable());
     }
 
     public void PhoneOff()
@@ -32,5 +30,21 @@ public class PhonePullout : MonoBehaviour
         animator.SetBool("pullOut", false);
         animator.SetBool("PhoneOff", true);
         pullOutButton.SetActive(true);
+
+        StartCoroutine(PhoneOffEnable());
+    }
+
+    private IEnumerator PulloutEnable()
+    {
+        yield return new WaitForSeconds(1f);
+        hungerUI.SetActive(true);
+        happinessUI.SetActive(true);
+    }
+
+    private IEnumerator PhoneOffEnable()
+    {
+        yield return new WaitForSeconds(1f);
+        hungerUI.SetActive(false);
+        happinessUI.SetActive(false);    
     }
 }

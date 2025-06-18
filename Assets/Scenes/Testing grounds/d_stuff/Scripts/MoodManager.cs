@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class MoodManager : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class MoodManager : MonoBehaviour
     public Material angryMaterial;
     public Material sadMaterial;
     public Material conflictedMaterial;
+    private bool canFeed;
+
+    void Start()
+    {
+        canFeed = true;
+    }
 
     void Update()
     {
@@ -44,5 +51,28 @@ public class MoodManager : MonoBehaviour
         {
             characterRenderer.material = normalMaterial;
         }
+    }
+
+    public void FeedTama()
+    {   if (canFeed)
+        {
+            StartCoroutine(FeedTamaRoutine());
+        }
+        else
+        {
+            Debug.Log("cant feed yet luh twin");
+        }
+    }
+
+    private IEnumerator FeedTamaRoutine()
+    {
+        canFeed = false;
+        //play animation
+        yield return new WaitForSeconds(1f); //needa change depending on animation length
+        hunger++;
+        Debug.Log("tama fed.");
+        yield return new WaitForSeconds(30f);
+        canFeed = true;
+        Debug.Log("cooldown done");
     }
 }

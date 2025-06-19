@@ -19,6 +19,7 @@ public class RockPaperScissorsManager : MonoBehaviour
     public TMP_Text resultText;
     public TMP_Text scoreText;
     public Button[] choiceButtons;
+    public Button playAgainButton;
 
     private int playerScore = 0;
     private int opponentScore = 0;
@@ -27,7 +28,6 @@ public class RockPaperScissorsManager : MonoBehaviour
     public void PlayerPick(int choiceIndex)
     {
         if (gameOver) return;
-
         DisableButtons();
         StartCoroutine(PlayRound((RPS)choiceIndex));
     }
@@ -92,6 +92,7 @@ public class RockPaperScissorsManager : MonoBehaviour
         {
             gameOver = true;
             resultText.text += "\nGame Over!";
+            playAgainButton.gameObject.SetActive(true);
         }
     }
 
@@ -116,5 +117,17 @@ public class RockPaperScissorsManager : MonoBehaviour
             case RPS.Scissors: return scissorsSprite;
             default: return idleSprite;
         }
+    }
+
+    public void PlayAgain()
+    {
+        playerScore = 0;
+        opponentScore = 0;
+        gameOver = false;
+        resultText.text = "Make your move.";
+        tamagotchiRenderer.sprite = idleSprite;
+        UpdateScore();
+        EnableButtons();
+        playAgainButton.gameObject.SetActive(false);
     }
 }

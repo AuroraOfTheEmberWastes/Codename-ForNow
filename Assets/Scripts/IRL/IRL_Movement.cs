@@ -18,11 +18,16 @@ public class IRL_Movement : MonoBehaviour
 	public float bumpDistance = 0.5f;
 	public float turnTime = 1f;
 
+	public float minSwipe = 10f;
+	public float swipeDone;
+	private Vector2 swipeDirection = Vector2.zero;
+
 	public GameObject movementTrigger;
 
 
 
 	private Coroutine movementCoroutine;
+	private Coroutine swipeCoroutine;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,6 +42,7 @@ public class IRL_Movement : MonoBehaviour
 		};
         playerLocation = new int[2] { 3, 2 };
 		playerOrientation = 1;
+		swipeDone = 0;
 
 
     }
@@ -46,15 +52,38 @@ public class IRL_Movement : MonoBehaviour
 
 	public void ActivateMovement(InputAction.CallbackContext context) 
 	{
+		Vector2 direction = context.ReadValue<Vector2>();
 
 
-		if (movementCoroutine == null) movementCoroutine = StartCoroutine(ActivateMovementCoroutine(context.ReadValue<Vector2>()));
+		// I need to rework this to properly work for mobile
+		if (direction.magnitude > 1)
+		{
+			if (swipeCoroutine != null)
+			{
+				StopCoroutine(swipeCoroutine); 
+				swipeCoroutine = StartCoroutine(SwipeCheck(direction));
+			}
+			else swipeCoroutine = StartCoroutine(SwipeCheck(direction));
+		}
 
+
+		direction.Normalize();
+		direction = new(Mathf.Round(direction.x), Mathf.Round(direction.y));
+
+		if (movementCoroutine == null && (swipeDone == 0 || swipeDone >= minSwipe))
+		{
+
+			Debug.Log(movementCoroutine == null);
+
+			movementCoroutine = StartCoroutine(ActivateMovementCoroutine(direction));
+		}
 	}
 
 
 	private IEnumerator ActivateMovementCoroutine(Vector2 direction)
 	{
+		swipeDone = 0;
+
 		if (direction == new Vector2(0, 1)) MoveForward();
 		else if (direction == new Vector2(1, 0)) TurnRight();
 		else if (direction == new Vector2(-1, 0)) TurnLeft();
@@ -64,6 +93,27 @@ public class IRL_Movement : MonoBehaviour
 		movementCoroutine = null;
 	}
 
+	private IEnumerator SwipeCheck(Vector2 direction)
+	{
+		float distance = direction.magnitude;
+		direction.Normalize();
+		direction = new(Mathf.Round(direction.x), Mathf.Round(direction.y));
+
+		if (direction == swipeDirection) 
+		{
+			swipeDone += distance;
+		}else
+		{
+			swipeDone = distance;
+			swipeDirection = direction;
+		}
+
+
+		yield return new WaitForSeconds(0.05f);
+
+		swipeDone = 0;
+		swipeCoroutine = null;
+	}
 
 
 	#region move 
@@ -150,6 +200,8 @@ public class IRL_Movement : MonoBehaviour
 
 	#endregion
 
+
+	#region turn
 	private void TurnRight()
 	{
 		Quaternion targetRotation = Quaternion.LookRotation(transform.right);
@@ -181,7 +233,7 @@ public class IRL_Movement : MonoBehaviour
 
 	}
 
-
+	#endregion
 
 
 	private void OpenTamagochi() 

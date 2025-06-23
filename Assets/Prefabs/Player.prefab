@@ -345,7 +345,6 @@ MonoBehaviour:
   movementTime: 0.5
   movementDistance: 1
   bumpDistance: 0.5
-  turnTime: 1
+  turnTime: 0.6
   minSwipe: 10
-  swipeDone: 0
   movementTrigger: {fileID: 603893236427307638}

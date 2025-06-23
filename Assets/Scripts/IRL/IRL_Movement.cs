@@ -19,7 +19,7 @@ public class IRL_Movement : MonoBehaviour
 	public float turnTime = 1f;
 
 	public float minSwipe = 10f;
-	public float swipeDone;
+	private float swipeDone;
 	private Vector2 swipeDirection = Vector2.zero;
 
 	public GameObject movementTrigger;
@@ -72,9 +72,6 @@ public class IRL_Movement : MonoBehaviour
 
 		if (movementCoroutine == null && (swipeDone == 0 || swipeDone >= minSwipe))
 		{
-
-			Debug.Log(movementCoroutine == null);
-
 			movementCoroutine = StartCoroutine(ActivateMovementCoroutine(direction));
 		}
 	}

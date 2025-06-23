@@ -6,17 +6,15 @@ public class MoodManager : MonoBehaviour
     [Range(0, 3)] public int hunger = 3;
     [Range(0, 3)] public int happiness = 3;
 
-    public Renderer characterRenderer;
-    public Material normalMaterial;
-    public Material angryMaterial;
-    public Material sadMaterial;
-    public Material conflictedMaterial;
-    private bool canFeed;
+    public SpriteRenderer characterSpriteRenderer;
+    public Sprite normalSprite;
+    public Sprite angrySprite;
+    public Sprite sadSprite;
+    public Sprite conflictedSprite;
+    public Sprite eatingSprite;
+    private bool feedRunning = false;
 
-    void Start()
-    {
-        canFeed = true;
-    }
+    private bool canFeed = true;
 
     void Update()
     {
@@ -25,7 +23,7 @@ public class MoodManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K)) GetSad();
         if (Input.GetKeyDown(KeyCode.L)) CheerUp();
 
-        UpdateMoodMaterial();
+        UpdateMoodSprite();
     }
 
     public void GetHungry() => hunger = Mathf.Max(hunger - 1, 0);
@@ -33,28 +31,34 @@ public class MoodManager : MonoBehaviour
     public void GetSad() => happiness = Mathf.Max(happiness - 1, 0);
     public void CheerUp() => happiness = Mathf.Min(happiness + 1, 3);
 
-    private void UpdateMoodMaterial()
+    private void UpdateMoodSprite()
     {
-        if (hunger == 1 && happiness == 1)
+        if (feedRunning==false)
         {
-            characterRenderer.material = conflictedMaterial;
-        }
-        else if (hunger == 1)
-        {
-            characterRenderer.material = angryMaterial;
-        }
-        else if (happiness == 1)
-        {
-            characterRenderer.material = sadMaterial;
-        }
-        else
-        {
-            characterRenderer.material = normalMaterial;
+            if (hunger == 1 && happiness == 1)
+            {
+                characterSpriteRenderer.sprite = conflictedSprite;
+            }
+            else if (hunger == 1)
+            {
+                characterSpriteRenderer.sprite = angrySprite;
+            }
+            else if (happiness == 1)
+            {
+                characterSpriteRenderer.sprite = sadSprite;
+            }
+            else
+            {
+                characterSpriteRenderer.sprite = normalSprite;
+            }
         }
     }
 
     public void FeedTama()
-    {   if (canFeed)
+    {
+        Debug.Log("FeedTama() called - canFeed: " + canFeed);
+
+        if (canFeed)
         {
             StartCoroutine(FeedTamaRoutine());
         }
@@ -66,11 +70,18 @@ public class MoodManager : MonoBehaviour
 
     private IEnumerator FeedTamaRoutine()
     {
+        feedRunning = true;
         canFeed = false;
-        //play animation
-        yield return new WaitForSeconds(1f); //needa change depending on animation length
-        hunger++;
+
+        characterSpriteRenderer.sprite = eatingSprite;
+        yield return new WaitForSeconds(2f);
+        characterSpriteRenderer.sprite = normalSprite;
+        feedRunning = false;
+
+        hunger = Mathf.Min(hunger + 1, 3);
         Debug.Log("tama fed.");
+
+        // cooldown
         yield return new WaitForSeconds(30f);
         canFeed = true;
         Debug.Log("cooldown done");

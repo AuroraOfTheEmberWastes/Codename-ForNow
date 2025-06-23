@@ -23,7 +23,7 @@ public class IRL_Movement : MonoBehaviour
 	private Vector2 swipeDirection = Vector2.zero;
 
 	public GameObject movementTrigger;
-
+	public PhonePullout phonePullout;
 
 
 	private Coroutine movementCoroutine;
@@ -236,6 +236,7 @@ public class IRL_Movement : MonoBehaviour
 	private void OpenTamagochi() 
 	{
 		Debug.Log("Open tamagochi");
+		phonePullout.PullOut();
 		movementTrigger.SetActive(false);
 	}
 

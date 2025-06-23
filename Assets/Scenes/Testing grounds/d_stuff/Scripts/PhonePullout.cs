@@ -17,7 +17,7 @@ public class PhonePullout : MonoBehaviour
 
     public void PullOut()
     {
-        pullOutButton.SetActive(false);
+        //pullOutButton.SetActive(false);
         animator.SetBool("pullOut", true);
         animator.SetBool("PhoneOff", false);
         phoneOffButton.SetActive(true);
@@ -29,7 +29,7 @@ public class PhonePullout : MonoBehaviour
     {
         animator.SetBool("pullOut", false);
         animator.SetBool("PhoneOff", true);
-        pullOutButton.SetActive(true);
+        //pullOutButton.SetActive(true);
 
         StartCoroutine(PhoneOffEnable());
     }

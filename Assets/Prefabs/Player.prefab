@@ -341,10 +341,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a99e45e215dd0d428c19da9e2b71192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementCooldown: 0.5
-  movementTime: 0.5
+  movementCooldown: 0.25
+  movementTime: 0.25
   movementDistance: 1
   bumpDistance: 0.5
   turnTime: 0.6
-  minSwipe: 10
+  minSwipe: 200
   movementTrigger: {fileID: 603893236427307638}
+  phonePullout: {fileID: 0}

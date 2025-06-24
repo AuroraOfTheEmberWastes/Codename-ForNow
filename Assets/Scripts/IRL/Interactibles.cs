@@ -13,28 +13,45 @@ public class Interactibles : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playerPosition = player.gameObject.transform.position;
-        playerOrientation = player.playerOrientation;
-        playerMovement = player.movementDistance;
         
         
         
         interactionObjects = new Dictionary<Vector3, GameObject>();
-        foreach(GameObject child in transform)
+        foreach(Transform child in transform)
         {
-            interactionObjects.Add(child.transform.position, child);
+            interactionObjects.Add(child.transform.position, child.gameObject);
         }
 
+        foreach (Vector3 key in interactionObjects.Keys)
+        {
+            Debug.Log(key);
+        }
 
     }
 
 
     public void Interact(InputAction.CallbackContext context)
     {
-        Vector3 orientationModifier = new(Mathf.Sin(Mathf.PI * playerOrientation), 0, Mathf.Cos(Mathf.PI * playerOrientation));
-        Vector3 interactibleLocation = orientationModifier + playerPosition;
+        if (context.canceled)
+		{
+			//updating these
+			playerPosition = player.gameObject.transform.position;
+			playerOrientation = player.playerOrientation;
+			playerMovement = player.movementDistance;
 
-        interactionObjects[interactibleLocation].GetComponent<InteractionObject>().OnEventTrigger();
+			//getting interactible key
+			Vector3 orientationModifier = new(-Mathf.Cos(Mathf.PI * playerOrientation / 2) * playerMovement, 0, Mathf.Sin(Mathf.PI * playerOrientation / 2) * playerMovement);
+			Vector3 interactibleLocation = orientationModifier + playerPosition;
+			if (interactionObjects.ContainsKey(interactibleLocation))
+			{
+				interactionObjects[interactibleLocation].GetComponent<InteractionObject>().OnEventTrigger();
+			}
+			else
+			{
+				Debug.Log(interactibleLocation);
+			}
+
+		}
     }
 
 

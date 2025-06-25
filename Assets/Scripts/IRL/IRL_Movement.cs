@@ -239,7 +239,6 @@ public class IRL_Movement : MonoBehaviour
 
 	private void OpenTamagochi() 
 	{
-		Debug.Log("Open tamagochi");
 		phonePullout.PullOut();
 		movementTrigger.SetActive(false);
 	}

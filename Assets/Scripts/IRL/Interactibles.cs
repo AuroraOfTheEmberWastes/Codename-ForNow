@@ -22,10 +22,6 @@ public class Interactibles : MonoBehaviour
             interactionObjects.Add(child.transform.position, child.gameObject);
         }
 
-        foreach (Vector3 key in interactionObjects.Keys)
-        {
-            Debug.Log(key);
-        }
 
     }
 

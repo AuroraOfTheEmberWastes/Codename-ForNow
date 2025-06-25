@@ -42,16 +42,14 @@ public class Interactibles : MonoBehaviour
 			//getting interactible key
 			Vector3 orientationModifier = new(-Mathf.Cos(Mathf.PI * playerOrientation / 2) * playerMovement, 0, Mathf.Sin(Mathf.PI * playerOrientation / 2) * playerMovement);
 			Vector3 interactibleLocation = orientationModifier + playerPosition;
-			if (interactionObjects.ContainsKey(interactibleLocation))
-			{
-				interactionObjects[interactibleLocation].GetComponent<InteractionObject>().OnEventTrigger();
-			}
-			else
-			{
-				Debug.Log(interactibleLocation);
-			}
-
-		}
+            foreach (Vector3 key in interactionObjects.Keys)
+            {
+                if(key == interactibleLocation)
+                {
+					interactionObjects[key].GetComponent<InteractionObject>().OnEventTrigger();
+				}
+            }
+        }
     }
 
 

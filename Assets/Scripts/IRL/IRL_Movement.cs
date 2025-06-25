@@ -8,9 +8,9 @@ using UnityEngine.InputSystem;
 public class IRL_Movement : MonoBehaviour
 {
 
-    private int[,] tilemap;
-    private int[] playerLocation;
-    private int playerOrientation = 1; // 1-up, 2-right, 3-down, 4-left
+    public int[,] tilemap;
+    public int[] playerLocation;
+    public int playerOrientation = 1; // 1-up, 2-right, 3-down, 4-left
 
 	public float movementCooldown = 0.5f;
 	public float movementTime = 0.15f;
@@ -18,7 +18,7 @@ public class IRL_Movement : MonoBehaviour
 	public float bumpDistance = 0.5f;
 	public float turnTime = 1f;
 
-	public float minSwipe = 10f;
+	public float minSwipe = 40f;
 	private float swipeDone;
 	private Vector2 swipeDirection = Vector2.zero;
 
@@ -43,7 +43,7 @@ public class IRL_Movement : MonoBehaviour
         playerLocation = new int[2] { 3, 2 };
 		playerOrientation = 1;
 		swipeDone = 0;
-
+		if (movementTime < 0.15f) movementTime = 0.15f;
 
     }
 
@@ -55,12 +55,13 @@ public class IRL_Movement : MonoBehaviour
 		Vector2 direction = context.ReadValue<Vector2>();
 
 
-		// I need to rework this to properly work for mobile
 		if (direction.magnitude > 1)
 		{
+
 			if (swipeCoroutine != null)
 			{
-				StopCoroutine(swipeCoroutine); 
+
+				StopCoroutine(swipeCoroutine);
 				swipeCoroutine = StartCoroutine(SwipeCheck(direction));
 			}
 			else swipeCoroutine = StartCoroutine(SwipeCheck(direction));

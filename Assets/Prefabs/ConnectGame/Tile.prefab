@@ -122,8 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridPos: {x: 0, y: 0}
-  meshRenderer: {fileID: 644381109765022405}
-  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  defaultColor: {r: 0, g: 0, b: 0, a: 1}
   currentColor: {r: 0, g: 0, b: 0, a: 0}
   isEndpoint: 0
   colorName: 

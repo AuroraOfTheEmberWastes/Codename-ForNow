@@ -2346,15 +2346,15 @@ MonoBehaviour:
   spacing: 1.1
   colorDots:
   - colorName: Red
-    color: {r: 0.21698111, g: 0.19548771, b: 0.19548771, a: 1}
+    color: {r: 0.4943396, g: 0.4318476, b: 0.4318476, a: 1}
     start: {x: 4, y: 0}
     end: {x: 1, y: 4}
   - colorName: Green
-    color: {r: 0.21960784, g: 0.19607843, b: 0.19607843, a: 1}
+    color: {r: 0.49411765, g: 0.43137255, b: 0.43137255, a: 1}
     start: {x: 1, y: 1}
     end: {x: 4, y: 1}
   - colorName: Blue
-    color: {r: 0.21960784, g: 0.19607843, b: 0.19607843, a: 1}
+    color: {r: 0.49411765, g: 0.43137255, b: 0.43137255, a: 1}
     start: {x: 0, y: 4}
     end: {x: 3, y: 3}
 --- !u!1 &651666947
@@ -4213,11 +4213,11 @@ MonoBehaviour:
     start: {x: 0, y: 1}
     end: {x: 2, y: 2}
   - colorName: Green
-    color: {r: 0.09481192, g: 1, b: 0, a: 1}
+    color: {r: 0.9490196, g: 1, b: 0, a: 1}
     start: {x: 1, y: 3}
     end: {x: 4, y: 4}
   - colorName: Blue
-    color: {r: 0, g: 0.031594515, b: 1, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     start: {x: 0, y: 4}
     end: {x: 3, y: 2}
 --- !u!1 &1593890802
@@ -5488,11 +5488,11 @@ MonoBehaviour:
     start: {x: 1, y: 0}
     end: {x: 3, y: 2}
   - colorName: Green
-    color: {r: 0.09481192, g: 1, b: 0, a: 1}
+    color: {r: 0.95090616, g: 1, b: 0, a: 1}
     start: {x: 0, y: 1}
     end: {x: 4, y: 4}
   - colorName: Blue
-    color: {r: 0, g: 0.031594515, b: 1, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     start: {x: 3, y: 0}
     end: {x: 2, y: 2}
 --- !u!1 &2052646190

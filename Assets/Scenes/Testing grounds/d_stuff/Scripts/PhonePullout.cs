@@ -20,7 +20,6 @@ public class PhonePullout : MonoBehaviour
         //pullOutButton.SetActive(false);
         animator.SetBool("pullOut", true);
         animator.SetBool("PhoneOff", false);
-        phoneOffButton.SetActive(true);
 
         StartCoroutine(PulloutEnable());
     }
@@ -39,11 +38,14 @@ public class PhonePullout : MonoBehaviour
         yield return new WaitForSeconds(1f);
         hungerUI.SetActive(true);
         happinessUI.SetActive(true);
+        phoneOffButton.SetActive(true);
+
     }
 
     private IEnumerator PhoneOffEnable()
     {
         yield return new WaitForSeconds(1f);
+        phoneOffButton.SetActive(false);
         hungerUI.SetActive(false);
         happinessUI.SetActive(false);    
     }

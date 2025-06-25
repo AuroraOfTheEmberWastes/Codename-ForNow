@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using System.Collections.Generic;
 
 public class RockPaperScissorsManager : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class RockPaperScissorsManager : MonoBehaviour
     private int playerScore = 0;
     private int opponentScore = 0;
     private bool gameOver = false;
+
+    public List<GameObject> enableObj;
+    public List<GameObject> disableObj;
+
 
     public void PlayerPick(int choiceIndex)
     {
@@ -92,7 +97,7 @@ public class RockPaperScissorsManager : MonoBehaviour
         {
             gameOver = true;
             resultText.text += "\nGame Over!";
-            playAgainButton.gameObject.SetActive(true);
+            StartCoroutine(endingGame());
         }
     }
 
@@ -129,5 +134,22 @@ public class RockPaperScissorsManager : MonoBehaviour
         UpdateScore();
         EnableButtons();
         playAgainButton.gameObject.SetActive(false);
+    }
+
+    private IEnumerator endingGame()
+    {
+        yield return new WaitForSeconds(1f);
+        playAgainButton.gameObject.SetActive(true);
+        foreach (GameObject obj in enableObj)
+        {
+            if (obj != null)
+                obj.SetActive(true);
+        }
+
+        foreach (GameObject obj in disableObj)
+        {
+            if (obj != null)
+                obj.SetActive(false);
+        }
     }
 }

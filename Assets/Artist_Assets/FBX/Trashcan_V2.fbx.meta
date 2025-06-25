@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 618c3ccf1a147994da3be062ddf6ac53
+guid: 30cfc52c755bef843a6966d7188c7434
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: KitchenCounter1
-    second: {fileID: 2100000, guid: d8cecd26f6d73c1429c0dc8ba1bf537e, type: 2}
+      name: Trashcan1
+    second: {fileID: 2100000, guid: 227612247e546d14c88828bbb2301e97, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,5 +1,8 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MicrowaveClickGame : MonoBehaviour
 {
@@ -7,6 +10,8 @@ public class MicrowaveClickGame : MonoBehaviour
     public GameObject hammer;
     public GameObject microwave;
     private const int maxClicks = 100;
+    public List<GameObject> enableObj;
+    public List<GameObject> disableObj;
 
     public MicrowaveClickUI uiScript;
 
@@ -23,6 +28,7 @@ public class MicrowaveClickGame : MonoBehaviour
             else if (clickCount == maxClicks)
             {
                 microwave.SetActive(false);
+                StartCoroutine(endingGame());
             }
         }
     }
@@ -32,6 +38,23 @@ public class MicrowaveClickGame : MonoBehaviour
         hammer.transform.eulerAngles = new Vector3(0, 0, 50);
         yield return new WaitForSeconds(0.2f);
         hammer.transform.eulerAngles = new Vector3(0, 0, 0);
+    }
+
+
+    public IEnumerator endingGame()
+    {
+        yield return new WaitForSeconds(1f);
+        foreach (GameObject obj in enableObj)
+        {
+            if (obj != null)
+                obj.SetActive(true);
+        }
+
+        foreach (GameObject obj in disableObj)
+        {
+            if (obj != null)
+                obj.SetActive(false);
+        }
     }
 
     private bool WasTapped()

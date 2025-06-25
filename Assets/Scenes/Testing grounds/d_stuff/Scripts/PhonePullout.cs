@@ -9,6 +9,7 @@ public class PhonePullout : MonoBehaviour
     public GameObject phoneOffButton;
     public GameObject hungerUI;
     public GameObject happinessUI;
+    public GameObject extra;
 
     void Start()
     {
@@ -39,6 +40,7 @@ public class PhonePullout : MonoBehaviour
         hungerUI.SetActive(true);
         happinessUI.SetActive(true);
         phoneOffButton.SetActive(true);
+        extra.SetActive(true);
 
     }
 
@@ -47,6 +49,7 @@ public class PhonePullout : MonoBehaviour
         yield return new WaitForSeconds(1f);
         phoneOffButton.SetActive(false);
         hungerUI.SetActive(false);
-        happinessUI.SetActive(false);    
+        happinessUI.SetActive(false);
+        extra.SetActive(false);
     }
 }

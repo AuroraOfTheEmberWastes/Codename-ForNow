@@ -21,19 +21,53 @@ public class PathManager : MonoBehaviour
     {
         if (hasWon) return;
 
+#if UNITY_EDITOR || UNITY_STANDALONE
+        HandleMouseInput();
+#else
+        HandleTouchInput();
+#endif
+    }
+
+    void HandleMouseInput()
+    {
         if (Input.GetMouseButtonDown(0))
-            TryStartPath();
+            TryStartPath(Input.mousePosition);
 
         if (isDrawing && Input.GetMouseButton(0))
-            ContinuePath();
+            ContinuePath(Input.mousePosition);
 
         if (isDrawing && Input.GetMouseButtonUp(0))
             EndPath();
     }
 
-    void TryStartPath()
+    void HandleTouchInput()
     {
-        Tile tile = GetTileUnderCursor();
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    TryStartPath(touch.position);
+                    break;
+                case TouchPhase.Moved:
+                case TouchPhase.Stationary:
+                    if (isDrawing)
+                        ContinuePath(touch.position);
+                    break;
+                case TouchPhase.Ended:
+                case TouchPhase.Canceled:
+                    if (isDrawing)
+                        EndPath();
+                    break;
+            }
+        }
+    }
+
+    void TryStartPath(Vector2 screenPosition)
+    {
+        Tile tile = GetTileUnderScreenPosition(screenPosition);
         if (tile != null && tile.isEndpoint)
         {
             currentColorId = tile.colorName;
@@ -47,9 +81,9 @@ public class PathManager : MonoBehaviour
         }
     }
 
-    void ContinuePath()
+    void ContinuePath(Vector2 screenPosition)
     {
-        Tile tile = GetTileUnderCursor();
+        Tile tile = GetTileUnderScreenPosition(screenPosition);
         if (tile == null) return;
 
         if (activePath.Contains(tile))
@@ -106,6 +140,7 @@ public class PathManager : MonoBehaviour
 
             if (!wasAlreadyConnected)
                 connectedPathsCount++;
+
             Invoke(nameof(CheckForWin), 0.05f);
         }
     }
@@ -120,7 +155,6 @@ public class PathManager : MonoBehaviour
                     tile.ResetTile();
             }
             allPaths.Remove(colorId);
-
             connectedPathsCount = Mathf.Max(connectedPathsCount - 1, 0);
         }
     }
@@ -134,9 +168,9 @@ public class PathManager : MonoBehaviour
         }
     }
 
-    Tile GetTileUnderCursor()
+    Tile GetTileUnderScreenPosition(Vector2 screenPosition)
     {
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Ray ray = mainCamera.ScreenPointToRay(screenPosition);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
             return hit.collider.GetComponent<Tile>();

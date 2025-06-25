@@ -33,11 +33,13 @@ public class GridManager : MonoBehaviour
     private void GenerateGrid()
     {
         grid = new Tile[gridSize, gridSize];
+        Vector3 origin = transform.position;
+
         for (int x = 0; x < gridSize; x++)
         {
             for (int y = 0; y < gridSize; y++)
             {
-                Vector3 worldPos = new Vector3(x * spacing, 0f, y * spacing);
+                Vector3 worldPos = origin + new Vector3(x * spacing, 0f, y * spacing);
                 GameObject tileGO = Instantiate(tilePrefab, worldPos, Quaternion.identity, transform);
                 tileGO.name = $"Tile_{x}_{y}";
 

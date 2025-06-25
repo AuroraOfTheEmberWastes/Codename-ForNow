@@ -1,4 +1,8 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System.Collections;
+using System.Collections.Generic;
 
 public class CableGameManager : MonoBehaviour
 {
@@ -9,6 +13,8 @@ public class CableGameManager : MonoBehaviour
     public PathManager pathManager1;
     public PathManager pathManager2;
     public PathManager pathManager3;
+    public List<GameObject> enableObj;
+    public List<GameObject> disableObj;
 
     // Update is called once per frame
     void Update()
@@ -30,9 +36,25 @@ public class CableGameManager : MonoBehaviour
         if (pathManager3.connectedPathsCount == 3)
         {
             lv3.SetActive(false);
-            //switch back to irl cam (game finished)
+            StartCoroutine(endingGame());
+        }
+    }
+
+    public IEnumerator endingGame()
+    {
+        yield return new WaitForSeconds(1f);
+        foreach (GameObject obj in enableObj)
+        {
+            if (obj != null)
+                obj.SetActive(true);
         }
 
-        
+        foreach (GameObject obj in disableObj)
+        {
+            if (obj != null)
+                obj.SetActive(false);
+        }
     }
+
+
 }

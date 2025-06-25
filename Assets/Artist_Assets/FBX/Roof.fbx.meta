@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02b10036d6e590842a4cb74a2b9f1979
+guid: 58e29b565805da64387947baaa91199f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BookCase1
-    second: {fileID: 2100000, guid: 446687330bfbdc946bcd94b137624c5e, type: 2}
+      name: Roof1
+    second: {fileID: 2100000, guid: d844367957e21a143bab2b208495d0d1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

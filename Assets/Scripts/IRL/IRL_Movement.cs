@@ -33,14 +33,17 @@ public class IRL_Movement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        tilemap = new int[5, 5]
-        {   {1, 1, 1, 1, 1},
-			{1, 0, 0, 0, 1},
-			{1, 0, 0, 0, 1},
-			{1, 0, 0, 0, 1},
-			{1, 1, 1, 1, 1}
+        tilemap = new int[7, 7]
+        {   {1, 2, 2, 2, 2, 2, 1},
+			{1, 0, 0, 0, 0, 0, 2},
+			{1, 2, 2, 0, 0, 2, 1},
+			{1, 1, 1, 2, 0, 0, 2},
+			{1, 1, 1, 2, 1, 0, 1},
+			{1, 1, 1, 0, 0, 0, 2},
+			{1, 1, 1, 1, 1, 1, 1}
+
 		};
-        playerLocation = new int[2] { 3, 2 };
+        playerLocation = new int[2] { 5, 3 };
 		playerOrientation = 1;
 		swipeDone = 0;
 		if (movementTime < 0.15f) movementTime = 0.15f;

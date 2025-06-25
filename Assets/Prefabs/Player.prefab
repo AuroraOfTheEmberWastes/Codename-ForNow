@@ -150,7 +150,19 @@ MonoBehaviour:
     m_ActionId: 8d7d6133-3594-44b8-b553-5ebbdff2a64d
     m_ActionName: 'IRL/IRL_Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Interactibles, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 79dc09a2-16ae-4908-b7de-2c72ce1b102f
     m_ActionName: 'IRL/Touch[/Simulated Touchscreen/press,/Device Simulator Touchscreen/press]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -341,6 +353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a99e45e215dd0d428c19da9e2b71192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLocation: 
+  playerOrientation: 1
   movementCooldown: 0.25
   movementTime: 0.25
   movementDistance: 1

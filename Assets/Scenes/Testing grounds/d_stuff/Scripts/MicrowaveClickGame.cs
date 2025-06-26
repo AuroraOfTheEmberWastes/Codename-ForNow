@@ -15,11 +15,18 @@ public class MicrowaveClickGame : MonoBehaviour
 
     public MicrowaveClickUI uiScript;
 
+    public SpriteRenderer microwaveSpriteRenderer;
+    public Sprite sprite1; // 0–33 clicks
+    public Sprite sprite2; // 34–66 clicks
+    public Sprite sprite3; // 67–99 clicks
+    public Sprite sprite4; // 100 clicks
+
     void Update()
     {
         if (WasTapped() && uiScript != null && uiScript.timerRunning)
         {
             clickCount++;
+            UpdateMicrowaveSprite();
 
             if (clickCount < maxClicks)
             {
@@ -27,9 +34,30 @@ public class MicrowaveClickGame : MonoBehaviour
             }
             else if (clickCount == maxClicks)
             {
-                microwave.SetActive(false);
+                //microwave.SetActive(false);
+                microwaveSpriteRenderer.sprite = sprite4;
                 StartCoroutine(endingGame());
             }
+        }
+    }
+
+    private void UpdateMicrowaveSprite()
+    {
+        if (clickCount >= maxClicks)
+        {
+            microwaveSpriteRenderer.sprite = sprite4;
+        }
+        else if (clickCount >= 67)
+        {
+            microwaveSpriteRenderer.sprite = sprite3;
+        }
+        else if (clickCount >= 34)
+        {
+            microwaveSpriteRenderer.sprite = sprite2;
+        }
+        else
+        {
+            microwaveSpriteRenderer.sprite = sprite1;
         }
     }
 
@@ -40,10 +68,10 @@ public class MicrowaveClickGame : MonoBehaviour
         hammer.transform.eulerAngles = new Vector3(0, 0, 0);
     }
 
-
     public IEnumerator endingGame()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
+
         foreach (GameObject obj in enableObj)
         {
             if (obj != null)

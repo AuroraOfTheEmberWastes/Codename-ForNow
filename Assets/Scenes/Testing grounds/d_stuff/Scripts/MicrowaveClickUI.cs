@@ -5,16 +5,17 @@ public class MicrowaveClickUI : MonoBehaviour
 {
     public TextMeshProUGUI clickText;
     public TextMeshProUGUI timerText;
+    public GameObject timerObj;
 
     private int clickCount = 0;
     private const int maxClicks = 100;
-    private float timeRemaining = 60f;
+    private float timeRemaining = 35f;
     public bool timerRunning = true;
 
     void Start()
     {
         if (clickText != null)
-            clickText.text = "Click count: 0";
+            //clickText.text = "Click count: 0";
 
         if (timerText != null)
             timerText.text = "Time: 60";
@@ -51,7 +52,8 @@ public class MicrowaveClickUI : MonoBehaviour
             else if (clickCount == maxClicks)
             {
                 if (clickText != null)
-                    clickText.text = "gs twin!";
+                    clickText.text = "Microwave Broken!";
+                    timerObj.SetActive(false);
 
                 Debug.Log("you clicked 100 times!");
             }

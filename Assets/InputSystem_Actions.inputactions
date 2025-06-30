@@ -996,7 +996,7 @@
             "id": "744a3154-2d10-4c91-9f87-4014a89ab193",
             "actions": [
                 {
-                    "name": "IRL_Movement",
+                    "name": "Swipe",
                     "type": "Value",
                     "id": "8d7d6133-3594-44b8-b553-5ebbdff2a64d",
                     "expectedControlType": "Vector2",
@@ -1022,7 +1022,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "IRL_Movement",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1033,7 +1033,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "IRL_Movement",
+                    "action": "Swipe",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -1044,7 +1044,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "IRL_Movement",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -1055,7 +1055,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "IRL_Movement",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -1066,7 +1066,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "IRL_Movement",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -1077,7 +1077,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "IRL_Movement",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },

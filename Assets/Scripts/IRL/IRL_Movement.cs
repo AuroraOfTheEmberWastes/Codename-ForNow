@@ -184,7 +184,7 @@ public class IRL_Movement : MonoBehaviour
 
 		while (t <= 1)
 		{
-			t += Time.fixedDeltaTime / timeMod;
+			t += Time.deltaTime / timeMod;
 			transform.localPosition = Vector3.Lerp(start, target, t);
 			yield return null;
 		}
@@ -226,7 +226,7 @@ public class IRL_Movement : MonoBehaviour
 		float t = 0f;
 		while (t <= 1)
 		{
-			t += Time.fixedDeltaTime / turnTime;
+			t += Time.deltaTime / turnTime;
 			transform.rotation = Quaternion.Slerp(currentRotation, destination, t);
 			yield return null;
 		}

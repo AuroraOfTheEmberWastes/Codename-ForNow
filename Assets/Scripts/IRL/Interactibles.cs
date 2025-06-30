@@ -23,7 +23,7 @@ public class Interactibles : MonoBehaviour
         }
 
 
-    }
+	}
 
 
     public void Interact(InputAction.CallbackContext context)
@@ -42,8 +42,8 @@ public class Interactibles : MonoBehaviour
             Debug.Log(interactibleLocation);
 
             foreach (Vector3 key in interactionObjects.Keys)
-            {
-                if(key == interactibleLocation)
+			{
+				if (key == interactibleLocation)
                 {
 					interactionObjects[key].GetComponent<InteractionObject>().OnEventTrigger();
                     break;

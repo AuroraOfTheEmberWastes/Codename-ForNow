@@ -357,9 +357,9 @@ MonoBehaviour:
   playerOrientation: 1
   movementCooldown: 0.25
   movementTime: 0.25
-  movementDistance: 1
+  movementDistance: 2
   bumpDistance: 0.5
-  turnTime: 0.6
+  turnTime: 0.25
   minSwipe: 200
   movementTrigger: {fileID: 603893236427307638}
   phonePullout: {fileID: 0}

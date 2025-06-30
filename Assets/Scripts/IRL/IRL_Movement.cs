@@ -22,6 +22,8 @@ public class IRL_Movement : MonoBehaviour
 	private float swipeDone;
 	private Vector2 swipeDirection = Vector2.zero;
 
+	public bool tamagochiOn = false;
+
 	public GameObject movementTrigger;
 	public PhonePullout phonePullout;
 
@@ -241,7 +243,16 @@ public class IRL_Movement : MonoBehaviour
 	{
 		phonePullout.PullOut();
 		movementTrigger.SetActive(false);
+		tamagochiOn = true;
 	}
 
+
+	public void TurnOnMovement()
+	{
+		if (tamagochiOn) 
+		{
+			movementTrigger.SetActive(true);
+		}
+	}
 
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7532965791623836963}
   - component: {fileID: 7036663490228787041}
+  - component: {fileID: 4668857917798568581}
   m_Layer: 0
   m_Name: MovementTrigger
   m_TagString: Untagged
@@ -170,6 +171,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &4668857917798568581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603893236427307638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740dc24346b21bb40a2c283aef28aeae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4839694610036348293}
 --- !u!1 &2839795172650946330
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,5 +375,6 @@ MonoBehaviour:
   bumpDistance: 0.5
   turnTime: 0.25
   minSwipe: 200
+  tamagochiOn: 0
   movementTrigger: {fileID: 603893236427307638}
   phonePullout: {fileID: 0}

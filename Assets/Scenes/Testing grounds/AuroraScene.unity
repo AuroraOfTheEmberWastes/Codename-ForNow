@@ -5851,10 +5851,6 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1297655838}
-    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
-      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Interact
-      objectReference: {fileID: 0}
     - target: {fileID: 7687013981718348401, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: m_Name
       value: Player

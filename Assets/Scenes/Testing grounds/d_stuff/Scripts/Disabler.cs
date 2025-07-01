@@ -14,17 +14,19 @@ public class Disabler : MonoBehaviour
     [Header("Kitchen")]
     public List<GameObject> kitchenEnable;
     public List<GameObject> kitchenDisable;
-        [Header("Cables")]
+    [Header("Cables")]
     public List<GameObject> cableEnable;
     public List<GameObject> cableDisable;
-        [Header("RPS")]
+    [Header("RPS")]
     public List<GameObject> rpsEnable;
     public List<GameObject> rpsDisable;
-        [Header("Microwave")]
+    [Header("Microwave")]
     public List<GameObject> microwaveEnable;
     public List<GameObject> microwaveDisable;
 
-
+    [Header("Dialogue")]
+    public List<GameObject> dialogueEnable;
+    public List<GameObject> dialogueDisable;
 
     public void GoToBedroom()
     {
@@ -104,6 +106,24 @@ public class Disabler : MonoBehaviour
                 obj.SetActive(false);
         }
         foreach (GameObject obj in microwaveEnable)
+        {
+            if (obj != null)
+                obj.SetActive(true);
+        }
+    }
+    
+    public void disableDuringDialogue()
+    {
+        foreach (GameObject obj in dialogueDisable)
+        {
+            if (obj != null)
+                obj.SetActive(false);
+        }
+    }
+
+    public void enableAfterDialogue()
+    {
+        foreach (GameObject obj in dialogueEnable)
         {
             if (obj != null)
                 obj.SetActive(true);

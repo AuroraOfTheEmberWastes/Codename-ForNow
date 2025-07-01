@@ -598,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 618c3ccf1a147994da3be062ddf6ac53, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.936
+      value: -1.654
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 618c3ccf1a147994da3be062ddf6ac53, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1055,7 +1055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c274c753a6991464cb72c1a794c5bd39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.38492036
+      value: -0.604
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c274c753a6991464cb72c1a794c5bd39, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1631,7 +1631,7 @@ Transform:
   m_GameObject: {fileID: 286212794}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 1.3, z: 11.5}
+  m_LocalPosition: {x: 5.5, y: 0, z: 11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1649,21 +1649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Bookcase
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &296956302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,7 +2073,7 @@ Transform:
   m_GameObject: {fileID: 318716938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.5, y: 1.3, z: 11.5}
+  m_LocalPosition: {x: 9.5, y: 0, z: 11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2106,21 +2091,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: KitchenSink
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &322951200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,7 +2238,7 @@ Transform:
   m_GameObject: {fileID: 327612216}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 1.3, z: -0.5}
+  m_LocalPosition: {x: 7.5, y: 0, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2286,21 +2256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Closet
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &333097424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,7 +3179,7 @@ Transform:
   m_GameObject: {fileID: 421468612}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1.3, z: 11.5}
+  m_LocalPosition: {x: 1.5, y: 0, z: 11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3242,21 +3197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: BathroomSink
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &421904317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,7 +3577,7 @@ Transform:
   m_GameObject: {fileID: 532125677}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: 1.3, z: 1.5}
+  m_LocalPosition: {x: 11.5, y: 0, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3655,21 +3595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Desk
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &536583966
 GameObject:
   m_ObjectHideFlags: 0
@@ -3946,7 +3871,7 @@ Transform:
   m_GameObject: {fileID: 571915328}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1.3, z: 7.5}
+  m_LocalPosition: {x: 1.5, y: 0, z: 7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3964,21 +3889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Shower
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &580925529
 GameObject:
   m_ObjectHideFlags: 0
@@ -5639,7 +5549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca3eb3c3ead45b048919ecc5cb748dad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.936
+      value: -1.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca3eb3c3ead45b048919ecc5cb748dad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5701,7 +5611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad107580d1828a499c92e5b43d49b00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2939204
+      value: -1.513
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad107580d1828a499c92e5b43d49b00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6226,7 +6136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8596974113318277182, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8596974113318277182, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7131,7 +7041,7 @@ Transform:
   m_GameObject: {fileID: 1151614057}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 1.3, z: 3.5}
+  m_LocalPosition: {x: 5.5, y: 0, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7149,21 +7059,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: bed
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1187515306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7941,7 +7836,7 @@ Transform:
   m_GameObject: {fileID: 1297655837}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8739,6 +8634,8 @@ MonoBehaviour:
   - {fileID: 1991988083}
   - {fileID: 928618476}
   - {fileID: 1563876859}
+  dialogueEnable: []
+  dialogueDisable: []
 --- !u!114 &1482311090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8894,7 +8791,7 @@ Transform:
   m_GameObject: {fileID: 1544894564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 1.3, z: 7.5}
+  m_LocalPosition: {x: 3.5, y: 0, z: 7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8912,21 +8809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Toilet
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1552897337
 GameObject:
   m_ObjectHideFlags: 0
@@ -9583,7 +9465,7 @@ Transform:
   m_GameObject: {fileID: 1689030375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 1.3, z: 11.5}
+  m_LocalPosition: {x: 7.5, y: 0, z: 11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9601,21 +9483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Fridge
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1720974341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10720,7 +10587,7 @@ Transform:
   m_GameObject: {fileID: 1942997646}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: 1.3, z: 9.5}
+  m_LocalPosition: {x: 11.5, y: 0, z: 9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10738,21 +10605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Microwave
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1950611971
 GameObject:
   m_ObjectHideFlags: 0
@@ -10779,7 +10631,7 @@ Transform:
   m_GameObject: {fileID: 1950611971}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: 1.3, z: 5.5}
+  m_LocalPosition: {x: 11.5, y: 0, z: 5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10797,21 +10649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Door
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1954228354
 GameObject:
   m_ObjectHideFlags: 0
@@ -11323,7 +11160,7 @@ Transform:
   m_GameObject: {fileID: 2035667997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.5, y: 1.3, z: 7.5}
+  m_LocalPosition: {x: 9.5, y: 0, z: 7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11341,21 +11178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: LivingTable
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2039395965
 GameObject:
   m_ObjectHideFlags: 0
@@ -11382,7 +11204,7 @@ Transform:
   m_GameObject: {fileID: 2039395965}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 1.3, z: 5.5}
+  m_LocalPosition: {x: 5.5, y: 0, z: 5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11400,21 +11222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interaction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
-        m_MethodName: DoTHing
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: TV
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2044153297
 GameObject:
   m_ObjectHideFlags: 0
@@ -11838,7 +11645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 480e4416c0356f9408a8f3880e2cbd30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.398
+      value: -1.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 480e4416c0356f9408a8f3880e2cbd30, type: 3}
       propertyPath: m_LocalPosition.z

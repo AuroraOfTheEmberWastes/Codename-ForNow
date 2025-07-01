@@ -2156,7 +2156,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
   m_PrefabInstance: {fileID: 657221223034607279}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 657221223034607280}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
@@ -8503,6 +8503,8 @@ MonoBehaviour:
   - {fileID: 1991988083}
   - {fileID: 928618476}
   - {fileID: 1563876859}
+  dialogueEnable: []
+  dialogueDisable: []
 --- !u!114 &1482311090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8599,6 +8601,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a1a7b3cc2e5f6d2418fdf25cf1bca67f, type: 3}
   m_PrefabInstance: {fileID: 1499817125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1514741620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1514741622}
+  - component: {fileID: 1514741621}
+  m_Layer: 0
+  m_Name: switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1514741621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514741620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5b6e6e16d4f9446baae6a7f41dd9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1690384621}
+        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
+        m_MethodName: DoTHing
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: enable
+          m_BoolArgument: 0
+        m_CallState: 2
+  disableEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1690384621}
+        m_TargetAssemblyTypeName: PrintNumber, Assembly-CSharp
+        m_MethodName: DoTHing
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: disable
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1514741622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514741620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.680474, y: -15.454065, z: 5.989144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1544894564
 GameObject:
   m_ObjectHideFlags: 0
@@ -12103,8 +12179,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4275252850626977780, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 657221223034607281}
   m_SourcePrefab: {fileID: 100100000, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+--- !u!1 &657221223034607280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4275252850626977780, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+  m_PrefabInstance: {fileID: 657221223034607279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &657221223034607281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657221223034607280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed1e5d7c7c2c644baaa976fb3f4ea1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabler: {fileID: 1482311089}
+  moodManager: {fileID: 1380341925}
 --- !u!1001 &8753463406256190435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12233,3 +12331,4 @@ SceneRoots:
   - {fileID: 657221223034607279}
   - {fileID: 1690384622}
   - {fileID: 719966422}
+  - {fileID: 1514741622}

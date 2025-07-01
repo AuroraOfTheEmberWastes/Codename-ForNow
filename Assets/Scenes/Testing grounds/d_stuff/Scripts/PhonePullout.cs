@@ -10,10 +10,12 @@ public class PhonePullout : MonoBehaviour
     public GameObject hungerUI;
     public GameObject happinessUI;
     public GameObject extra;
+    public Disabler disabler;
 
     void Start()
     {
         phoneOffButton.SetActive(false);
+        disabler.GoToBedroom();
     }
 
     public void PullOut()

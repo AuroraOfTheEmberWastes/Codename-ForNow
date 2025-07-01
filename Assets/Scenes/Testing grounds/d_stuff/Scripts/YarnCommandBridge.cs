@@ -106,7 +106,18 @@ public class YarnCommandBridge : MonoBehaviour
         disabler.disableDuringDialogue();
     }
 
-
+    [YarnCommand("set_enabled_in_unity")]
+    public static void SetEnabledInUnity(string target, bool mode=true) 
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.name == target)
+            {
+                obj.SetActive(mode);
+            }
+        }
+    }
 
 
 

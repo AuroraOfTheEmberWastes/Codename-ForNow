@@ -8,6 +8,7 @@ With a mouthful Hmmh Thank you! I loveee burgers :D
 title: Story1
 ---
 <<disable_during_dialogue Dialogue>>
+<<set_enabled_in_unity Phone false>>
 The egg hatches and there it is, your new friend.
 
 Hi! I'm Peeko, your new best friend! You can play with me, talk with me and I'll always be there for you!
@@ -22,7 +23,7 @@ I'll show you around!
 
 <<go_to "Dialogue" "kitchen">>
 In the top left corner, you can see how hungry I am. You will have to feed me when I get hungry. Let's try it out!
-<<enable_after_dialogue Dialogue>>
+<<enable_after_dialogue>>
 ===
 
 title: Story2

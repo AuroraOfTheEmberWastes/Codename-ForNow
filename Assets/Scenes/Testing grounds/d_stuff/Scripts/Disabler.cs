@@ -31,6 +31,12 @@ public class Disabler : MonoBehaviour
     public List<GameObject> playRPSenable;
     public List<GameObject> playRPSdisable;
 
+
+    void Start()
+    {
+        GoToBedroom();
+    }
+
     public void GoToBedroom()
     {
         foreach (GameObject obj in bedroomDisable)
@@ -147,7 +153,7 @@ public class Disabler : MonoBehaviour
         foreach (GameObject obj in playRPSdisable)
         {
             if (obj != null)
-                obj.SetActive(true);
+                obj.SetActive(false);
         }
     }
 }

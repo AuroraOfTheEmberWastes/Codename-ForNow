@@ -12056,6 +12056,7 @@ MonoBehaviour:
   - {fileID: 1524148703}
   - {fileID: 892519849}
   - {fileID: 19397266}
+  - {fileID: 699810615}
   bedroomDisable:
   - {fileID: 503898973}
   - {fileID: 914978383}
@@ -12064,11 +12065,14 @@ MonoBehaviour:
   - {fileID: 496308094}
   - {fileID: 275242175}
   - {fileID: 568775861}
+  - {fileID: 981397008}
+  - {fileID: 28571591}
   playroomEnable: []
   playroomDisable: []
   kitchenEnable:
   - {fileID: 1636809359}
   - {fileID: 568775861}
+  - {fileID: 981397008}
   kitchenDisable:
   - {fileID: 1524148703}
   - {fileID: 503898973}
@@ -12077,6 +12081,8 @@ MonoBehaviour:
   - {fileID: 275242175}
   - {fileID: 892519849}
   - {fileID: 19397266}
+  - {fileID: 699810615}
+  - {fileID: 28571591}
   cableEnable:
   - {fileID: 567403860}
   cableDisable:
@@ -12092,6 +12098,7 @@ MonoBehaviour:
   rpsEnable:
   - {fileID: 503898973}
   - {fileID: 275242175}
+  - {fileID: 28571591}
   rpsDisable:
   - {fileID: 914978383}
   - {fileID: 1991988083}
@@ -12100,6 +12107,9 @@ MonoBehaviour:
   - {fileID: 892519849}
   - {fileID: 19397266}
   - {fileID: 568775861}
+  - {fileID: 981397008}
+  - {fileID: 699810615}
+  - {fileID: 2068808916}
   microwaveEnable:
   - {fileID: 496308094}
   microwaveDisable:
@@ -12112,7 +12122,8 @@ MonoBehaviour:
   - {fileID: 1524148703}
   dialogueEnable: []
   dialogueDisable: []
-  playRPSenable: []
+  playRPSenable:
+  - {fileID: 2068808916}
   playRPSdisable: []
 --- !u!114 &1482311090
 MonoBehaviour:

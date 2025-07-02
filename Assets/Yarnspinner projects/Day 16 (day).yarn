@@ -1,0 +1,69 @@
+title: StartD16
+---
+<<wait 2>>
+<<set_enabled_in_unity "Start Cover" false>>
+
+// PLAY buzzing sound
+[i]BZZZTT...[/i]
+[i]Your phone is buzzing again...[/i]
+===
+
+// Set movement trigger and phone to active, interact with Peeko
+title: D16D1
+---
+Peeko: You were gone for so long...
+(Peeko Happiness is low so play RPS)
+===
+
+// Set true when minigame is finished?
+title: D16D2
+---
+I'm really hungry, maybe I should get something from the fridge...
+[i]Go to the fridge[/i]
+===
+
+// Interactible with Fridge
+title: D16D3
+---
+[i]You open the fridge[/i]
+// <<set_enabled_in_unity "Pixel Burger PNG" true>>
+Huh? I thought I had more in my fridge?
+[i]You get the burger out of the fridge, and warm it up in the microwave...[/i]
+
+// PLAY microwave sound
+// <<wait 5>>
+// ENABLE post processing for 5 seconds
+What! What's happening??
+
+Peeko? Is that you?? What just happened?!
+===
+
+title: D16D4
+---
+[i]You pick up your phone[/i]
+
+Peeko: Ahh I'm soooo hungryyyy
+
+Peeko? Please tell me what happened?
+
+[i]Peeko does not answer[/i]
+[i]You decide to give Peeko some food in the hope you get an answer after that...[/i]
+// Player feeds Peeko
+===
+
+title: D16D5
+---
+Peeko: Did you like yours?
+
+What?
+Did I like what?
+
+Peeko: Your burger... 
+
+How did you-
+[i]Peeko seems to not interact at all[/i]
+You know what, never mind...
+I'll just go to sleep
+// switch scene
+
+===

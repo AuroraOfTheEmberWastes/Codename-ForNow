@@ -736,6 +736,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d01b0cf86d9a7f941a493534cba9e66f, type: 3}
   m_PrefabInstance: {fileID: 135488754}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &137409258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137409259}
+  - component: {fileID: 137409260}
+  m_Layer: 0
+  m_Name: D2S2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137409259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137409258}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 643451361}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137409260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137409258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736457040}
+        m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
+        m_MethodName: StartDialogue
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: D3S2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 736457039}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &145056824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2063,6 +2134,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 603893236427307638, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
   m_PrefabInstance: {fileID: 953799983}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &643451360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643451361}
+  m_Layer: 0
+  m_Name: StoryDialogues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &643451361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643451360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 137409259}
+  - {fileID: 1366865312}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645759206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2296,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: startNode
+      value: D3S1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: startAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3352886269468689285, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: m_SortingOrder
       value: 1000
@@ -2669,6 +2781,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4839694610036348293, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: D2S1
+      value: 
+      objectReference: {fileID: 137409260}
+    - target: {fileID: 4839694610036348293, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: storymode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839694610036348293, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: phonePullout
       value: 
       objectReference: {fileID: 1482311090}
@@ -2857,7 +2977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1151614058
 Transform:
   m_ObjectHideFlags: 0
@@ -2887,43 +3007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interaction:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 736457040}
-        m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
-        m_MethodName: StartDialogue
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Template
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 634936490}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 736457039}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &1187515306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3308,6 +3392,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8affffdc8c52d0e419f41ecbc4fe2bbe, type: 3}
   m_PrefabInstance: {fileID: 1346476542}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1366865311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366865312}
+  - component: {fileID: 1366865313}
+  m_Layer: 0
+  m_Name: D2S3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1366865312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366865311}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 643451361}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1366865313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366865311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e469788cb687bb04c9a767cd9d910b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736457040}
+        m_TargetAssemblyTypeName: Yarn.Unity.DialogueRunner, YarnSpinner.Unity
+        m_MethodName: StartDialogue
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: D3S3
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 736457039}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1380402714
 GameObject:
   m_ObjectHideFlags: 0
@@ -4716,7 +4871,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Template
+          m_StringArgument: D3S4
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 634936490}
@@ -4943,6 +5098,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 634936490}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: D2S4
+      value: 
+      objectReference: {fileID: 1366865313}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: storymode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3429153726261469537, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5018,3 +5181,4 @@ SceneRoots:
   - {fileID: 1519631704}
   - {fileID: 429078611}
   - {fileID: 262853930}
+  - {fileID: 643451361}

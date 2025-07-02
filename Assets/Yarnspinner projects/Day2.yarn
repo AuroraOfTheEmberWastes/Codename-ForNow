@@ -1,0 +1,65 @@
+﻿title: D2S1
+---
+There you are!
+
+I'm sooo hungry, please feed me!
+===
+
+title: D2S2
+---
+You press on the buttons to move to the kitchen and you feed Peeko
+
+Omnomnom, thanksss! Food makes me feel good
+
+No problem, I wish I could spend more time with you, 
+but I really need to work on something...
+
+Nooo! Please stay for a little longer.
+
+I'm sorry Peeko, I can't I'll talk to you later
+
+Okay
+<<set_enabled_in_unity DeskInt true>>
+===
+
+title: D2S3
+---
+Play with me please! ...
+
+Is that Peeko?
+===
+
+title: D2S4
+---
+That's way better! We should get to know each other better. 
+Since, we're spending so much time together...
+
+Let me ask you something! What's your favorite color?
+
+Purple
+
+Oooohh so pretty! Purple like me
+
+Yes, just like you!
+
+...
+
+Peeko, don't you ever get the feeling that you're bored?
+
+Never! Why would I?
+
+I have you! >o<
+
+But what if I'm not there, like just now? What do you do?
+
+I just stay in my room and wait for you!
+I'm just programmed like that!
+
+Peeko wants to play...
+===
+
+title: D2S5
+---
+Timeskip
+//switch scene
+===

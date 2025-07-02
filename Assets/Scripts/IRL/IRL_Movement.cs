@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 //using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Yarn;
 
 public class IRL_Movement : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class IRL_Movement : MonoBehaviour
 
 	private Coroutine movementCoroutine;
 	private Coroutine swipeCoroutine;
+
+    [Header("Story Settings")]
+    public bool storymode = false;
+	public InteractionObject D2S1;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -244,6 +249,10 @@ public class IRL_Movement : MonoBehaviour
 		phonePullout.PullOut();
 		movementTrigger.SetActive(false);
 		tamagochiOn = true;
+		if (storymode)
+		{
+			D2S1.OnEventTrigger();
+		}
 	}
 
 

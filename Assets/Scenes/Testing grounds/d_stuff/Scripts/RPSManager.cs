@@ -28,6 +28,11 @@ public class RockPaperScissorsManager : MonoBehaviour
 
     public List<GameObject> enableObj;
     public List<GameObject> disableObj;
+    public InteractionObject D2S4;
+    public InteractionObject D2S5;
+    public bool storymode = false;
+    public int timesPlayed = 0;
+
 
 
     public void PlayerPick(int choiceIndex)
@@ -96,8 +101,21 @@ public class RockPaperScissorsManager : MonoBehaviour
         if (playerScore == 2 || opponentScore == 2)
         {
             gameOver = true;
+            timesPlayed ++;
             resultText.text += "\nGame Over!";
             StartCoroutine(endingGame());
+            if (storymode)
+            {
+                if (timesPlayed == 1)
+                {
+                    D2S4.OnEventTrigger();
+                }
+                if (timesPlayed == 2)
+                {
+                    //BLACK SCREEN?
+                    D2S5.OnEventTrigger();
+                }
+            }
         }
     }
 

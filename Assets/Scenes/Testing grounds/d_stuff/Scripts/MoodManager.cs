@@ -14,6 +14,8 @@ public class MoodManager : MonoBehaviour
     public Sprite eatingSprite;
     private bool feedRunning = false;
     private bool canFeed = true;
+    public bool storymode = false;
+    public InteractionObject D2S2;
 
     void Update()
     {
@@ -86,6 +88,10 @@ public class MoodManager : MonoBehaviour
         feedRunning = false;
         hunger = Mathf.Min(hunger + 1, 3);
         Debug.Log("tama fed.");
+        if (storymode)
+        {
+            D2S2.OnEventTrigger();
+        }
 
         yield return new WaitForSeconds(30f);
         canFeed = true;

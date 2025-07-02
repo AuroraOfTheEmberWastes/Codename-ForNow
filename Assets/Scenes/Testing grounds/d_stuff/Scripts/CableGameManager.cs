@@ -15,6 +15,7 @@ public class CableGameManager : MonoBehaviour
     public PathManager pathManager3;
     public List<GameObject> enableObj;
     public List<GameObject> disableObj;
+    public InteractionObject interactionObject;
 
     // Update is called once per frame
     void Update()
@@ -43,6 +44,7 @@ public class CableGameManager : MonoBehaviour
     public IEnumerator endingGame()
     {
         yield return new WaitForSeconds(1f);
+        interactionObject.OnEventTrigger();
         foreach (GameObject obj in enableObj)
         {
             if (obj != null)

@@ -27,6 +27,9 @@ public class Disabler : MonoBehaviour
     [Header("Dialogue")]
     public List<GameObject> dialogueEnable;
     public List<GameObject> dialogueDisable;
+    [Header("PlayRPS")]
+    public List<GameObject> playRPSenable;
+    public List<GameObject> playRPSdisable;
 
     public void GoToBedroom()
     {
@@ -111,7 +114,7 @@ public class Disabler : MonoBehaviour
                 obj.SetActive(true);
         }
     }
-    
+
     public void disableDuringDialogue()
     {
         foreach (GameObject obj in dialogueDisable)
@@ -124,6 +127,24 @@ public class Disabler : MonoBehaviour
     public void enableAfterDialogue()
     {
         foreach (GameObject obj in dialogueEnable)
+        {
+            if (obj != null)
+                obj.SetActive(true);
+        }
+    }
+
+    public void enableRPS()
+    {
+        foreach (GameObject obj in playRPSenable)
+        {
+            if (obj != null)
+                obj.SetActive(true);
+        }
+    }
+    
+    public void disableRPS()
+    {
+        foreach (GameObject obj in playRPSdisable)
         {
             if (obj != null)
                 obj.SetActive(true);

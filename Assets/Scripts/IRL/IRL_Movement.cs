@@ -264,4 +264,10 @@ public class IRL_Movement : MonoBehaviour
 		}
 	}
 
+	public void TurnOffMovement()
+	{
+		tamagochiOn = true;
+		movementTrigger.SetActive(false);
+	}
+
 }

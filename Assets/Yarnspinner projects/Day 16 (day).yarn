@@ -30,8 +30,12 @@ title: D16D3
 [i]You open the fridge[/i]
 <<set_enabled_in_unity "Borgir" true>>
 Huh? I thought I had more in my fridge?
-[i]You get the burger out of the fridge, and warm it up in the microwave...[/i]
+I'll warm it up in the microwave...
 <<set_enabled_in_unity "Borgir" false>>
+===
+
+title: microwave
+---
 // PLAY microwave sound
 // <<wait 5>>
 // ENABLE post processing for 5 seconds
@@ -66,5 +70,5 @@ How did you-
 [i]Peeko seems to not interact at all[/i]
 You know what, never mind...
 I'll just go to sleep
-// scene switch
+<<load_scene "Day 16(night)">>
 ===

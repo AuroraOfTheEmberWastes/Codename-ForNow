@@ -10,5 +10,24 @@ Peeko: [b]NOW[/b]
 
 What?
 Why does everything seem so weird?
+...
+I'm just tired, let's finish this quickly and go back to sleep...
 ===
 
+title: D16N1
+---
+Peeko: WHAT TOOK YOU SO LONG?!
+
+I'm so sorry Peeko! I was sleeping, I needed some rest and it is the middle of the night...
+===
+
+title: D16N2
+---
+Peeko: I'm sorry for attacking you in the middle of the night, please forgive me. 
+Peeko: I like you so much, it's just, it's soooo empty and lonely in here, 
+Peeko: I wish I could be there with you
+
+I know Peeko, I wish I could take you away from that dull place...
+I'm going back to sleep	
+<<load_scene "Day 17">>
+===

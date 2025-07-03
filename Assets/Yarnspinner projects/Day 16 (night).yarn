@@ -1,4 +1,14 @@
 title: StartD16N
 ---
-test
+[i]You wake up from a really loud noise[/i]
+Peeko: YOU! 
+Peeko: COME HERE
+Peeko: I NEED YOU
+Peeko: [b]NOW[/b]
+<<wait 1>>
+<<set_enabled_in_unity "Start Cover" false>>
+
+What?
+Why does everything seem so weird?
 ===
+

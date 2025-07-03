@@ -4,6 +4,7 @@ title: StartD16
 <<set_enabled_in_unity "Start Cover" false>>
 
 // PLAY buzzing sound
+<<set_enabled_in_unity "PhoneBuzzing" true>>
 [i]BZZZTT...[/i]
 [i]Your phone is buzzing again...[/i]
 ===
@@ -11,8 +12,9 @@ title: StartD16
 // Set movement trigger and phone to active, interact with Peeko
 title: D16D1
 ---
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: You were gone for so long...
-(Peeko Happiness is low so play RPS)
+//Peeko Happiness is low so play RPS
 ===
 
 // Set true when minigame is finished?

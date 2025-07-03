@@ -69,7 +69,16 @@ Peeko: I'm just programmed like that!
 [i]Peeko wants to play Rock Paper Scissors...[/i]
 ===
 
-title: D2S5
+// Start time skip after playing RPS
+title: TimeSkip
 ---
-<<load_scene "Day 15">>
+<<<set_enabled_in_unity "MovementTrigger" false>>
+<<set_enabled_in_unity "TimeSkip BG" true>>
+
+[i]For the next couple of days, you and Peeko have lots of fun together...
+The endless feeling of loneliness is finally gone, you have a new friend.
+That will never leave your side...
+Peeko and you have deep conversations,
+you talk about everything you could ever think of with each other.
+Especially the existence of the world...
 ===

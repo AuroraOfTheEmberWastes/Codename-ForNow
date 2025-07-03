@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 137409259}
   - component: {fileID: 137409260}
   m_Layer: 0
-  m_Name: D2S2
+  m_Name: D3S2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2302,7 +2302,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: startAutomatically
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 953799985}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 736457039}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 953799985}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TurnOffMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TurnOnMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: IRL_Movement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: IRL_Movement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3352886269468689285, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: m_SortingOrder
@@ -3403,7 +3479,7 @@ GameObject:
   - component: {fileID: 1366865312}
   - component: {fileID: 1366865313}
   m_Layer: 0
-  m_Name: D2S3
+  m_Name: D3S3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

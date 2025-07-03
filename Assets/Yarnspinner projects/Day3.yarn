@@ -1,7 +1,7 @@
 ﻿title: D3S1
 ---
 Ugh, I'm so tired
-//play buzz sound
+[i]BZZZTT...[/i]
 Wait! Peeko, I'm here don't worry...
 ===
 
@@ -39,5 +39,5 @@ Wow! This space... It's way bigger! And I'm so close to you
 
 I'm a little tired, I want to sleep... zzz
 
-//switch scene
+<<load_scene "Day 16(day)">>
 ===

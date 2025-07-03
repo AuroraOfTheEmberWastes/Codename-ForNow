@@ -12,6 +12,7 @@ title: StartD16
 // Set movement trigger and phone to active, interact with Peeko
 title: D16D1
 ---
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: You were gone for so long...
 (Peeko Happiness is low so play RPS)
 ===

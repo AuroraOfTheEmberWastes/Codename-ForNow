@@ -11,6 +11,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Testing grounds/d_stuff/buildtestD.unity
     guid: 18e7938c388c7bb4db6896f4156b703e
+  - enabled: 1
+    path: Assets/Scenes/Day 2.unity
+    guid: f2957856f7a449f42b01fb9f936f311a
+  - enabled: 1
+    path: Assets/Scenes/Day 15.unity
+    guid: 36a66583d1f7516439c03726d87eb17b
+  - enabled: 1
+    path: Assets/Scenes/Day 16 (day).unity
+    guid: ebb72431ac956074e9259b1682062292
+  - enabled: 1
+    path: Assets/Scenes/Day 16(night).unity
+    guid: 4465e9c1694fb4a41af8eecfa7108f08
+  - enabled: 1
+    path: Assets/Scenes/Day 17.unity
+    guid: d3df9a09cd7d6ee41ac5203c192b2877
+  - enabled: 1
+    path: Assets/Scenes/Day 21.unity
+    guid: 40dca8f49fdd9da4ba7d138261bfccc1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

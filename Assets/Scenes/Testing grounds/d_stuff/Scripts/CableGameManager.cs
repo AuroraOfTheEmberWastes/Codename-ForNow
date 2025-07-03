@@ -16,6 +16,13 @@ public class CableGameManager : MonoBehaviour
     public List<GameObject> enableObj;
     public List<GameObject> disableObj;
     public InteractionObject interactionObject;
+    public GameObject movementStuff;
+
+
+    void Start()
+    {
+        movementStuff.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -56,6 +63,7 @@ public class CableGameManager : MonoBehaviour
             if (obj != null)
                 obj.SetActive(false);
         }
+        movementStuff.SetActive(false);
     }
 
 

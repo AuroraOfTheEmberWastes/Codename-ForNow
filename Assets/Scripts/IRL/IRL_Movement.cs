@@ -252,6 +252,7 @@ public class IRL_Movement : MonoBehaviour
 		if (storymode)
 		{
 			D2S1.OnEventTrigger();
+			storymode = false;
 		}
 	}
 
@@ -262,6 +263,12 @@ public class IRL_Movement : MonoBehaviour
 		{
 			movementTrigger.SetActive(true);
 		}
+	}
+
+	public void TurnOffMovement()
+	{
+		tamagochiOn = true;
+		movementTrigger.SetActive(false);
 	}
 
 }

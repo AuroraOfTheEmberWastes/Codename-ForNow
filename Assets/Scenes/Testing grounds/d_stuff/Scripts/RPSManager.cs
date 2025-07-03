@@ -20,7 +20,7 @@ public class RockPaperScissorsManager : MonoBehaviour
     public TMP_Text resultText;
     public TMP_Text scoreText;
     public Button[] choiceButtons;
-    public Button playAgainButton;
+    // Removed: public Button playAgainButton;
 
     private int playerScore = 0;
     private int opponentScore = 0;
@@ -33,7 +33,10 @@ public class RockPaperScissorsManager : MonoBehaviour
     public bool storymode = false;
     public int timesPlayed = 0;
 
-
+    void OnEnable()
+    {
+        RestartGame();
+    }
 
     public void PlayerPick(int choiceIndex)
     {
@@ -101,7 +104,7 @@ public class RockPaperScissorsManager : MonoBehaviour
         if (playerScore == 2 || opponentScore == 2)
         {
             gameOver = true;
-            timesPlayed ++;
+            timesPlayed++;
             resultText.text += "\nGame Over!";
             StartCoroutine(endingGame());
             if (storymode)
@@ -142,7 +145,7 @@ public class RockPaperScissorsManager : MonoBehaviour
         }
     }
 
-    public void PlayAgain()
+    private void RestartGame()
     {
         playerScore = 0;
         opponentScore = 0;
@@ -151,13 +154,13 @@ public class RockPaperScissorsManager : MonoBehaviour
         tamagotchiRenderer.sprite = idleSprite;
         UpdateScore();
         EnableButtons();
-        playAgainButton.gameObject.SetActive(false);
     }
+
 
     private IEnumerator endingGame()
     {
         yield return new WaitForSeconds(1f);
-        playAgainButton.gameObject.SetActive(true);
+
         foreach (GameObject obj in enableObj)
         {
             if (obj != null)

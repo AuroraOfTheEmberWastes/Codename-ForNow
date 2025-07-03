@@ -3043,6 +3043,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1397044460}
     - target: {fileID: 4839694610036348293, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: storyday
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4839694610036348293, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: storymode
       value: 1
       objectReference: {fileID: 0}

@@ -5412,7 +5412,10 @@ MonoBehaviour:
   movementTrigger: {fileID: 603893236022079321}
   phonePullout: {fileID: 1482311090}
   storymode: 1
+  storymode2: 0
+  storyday: 0
   D2S1: {fileID: 1547457879}
+  D2S2: {fileID: 799100685}
 --- !u!114 &7036663490376221262
 MonoBehaviour:
   m_ObjectHideFlags: 0

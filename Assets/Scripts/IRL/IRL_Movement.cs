@@ -35,6 +35,7 @@ public class IRL_Movement : MonoBehaviour
     [Header("Story Settings")]
     public bool storymode = false;
     public bool storymode2 = false;
+    public bool storyday = false;
     public InteractionObject D2S1;
     public InteractionObject D2S2;
 
@@ -241,7 +242,7 @@ public class IRL_Movement : MonoBehaviour
             storymode = false;
             storymode2 = true;
         }
-        else if (storymode2)
+        else if (storymode2 && storyday)
         {
             D2S2.OnEventTrigger();
             storymode = false;

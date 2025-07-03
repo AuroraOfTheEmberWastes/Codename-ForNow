@@ -73,7 +73,6 @@ Peeko: I'm just programmed like that!
 title: TimeSkip
 ---
 <<wait 1>>
-<<set_enabled_in_unity "MovementTrigger" false>>
 <<set_enabled_in_unity "TimeSkip BG" true>>
 [i]For the next couple of days, you and Peeko have lots of fun together...
 The endless feeling of loneliness is finally gone, you have a new friend.

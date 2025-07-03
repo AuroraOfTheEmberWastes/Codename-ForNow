@@ -5331,6 +5331,10 @@ PrefabInstance:
       propertyPath: interactionObject
       value: 
       objectReference: {fileID: 926656429}
+    - target: {fileID: 5018544214183711019, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: enableObj.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8483087017447889361, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: m_IsActive
       value: 0

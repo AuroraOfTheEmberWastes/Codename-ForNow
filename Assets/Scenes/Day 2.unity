@@ -2132,7 +2132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: startNode
-      value: StartD16
+      value: D2S1
       objectReference: {fileID: 0}
     - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: startAutomatically

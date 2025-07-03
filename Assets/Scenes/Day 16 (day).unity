@@ -5285,9 +5285,13 @@ PrefabInstance:
       value: PhoneStuff
       objectReference: {fileID: 0}
     - target: {fileID: 5018544214183711019, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: movementStuff
+      value: 
+      objectReference: {fileID: 634936490}
+    - target: {fileID: 5018544214183711019, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: interactionObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1099494114}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

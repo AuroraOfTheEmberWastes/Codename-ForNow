@@ -17,7 +17,6 @@ I'm just tired, let's finish this quickly and go back to sleep...
 title: D16N1
 ---
 Peeko: WHAT TOOK YOU SO LONG?!
-
 I'm so sorry Peeko! I was sleeping, I needed some rest and it is the middle of the night...
 ===
 
@@ -28,6 +27,6 @@ Peeko: I like you so much, it's just, it's soooo empty and lonely in here,
 Peeko: I wish I could be there with you
 
 I know Peeko, I wish I could take you away from that dull place...
-I'm going back to sleep	
+[i]You were so tired that you fell right asleep after talking to Peeko[/i]
 <<load_scene "Day 17">>
 ===

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MoodManager : MonoBehaviour
@@ -12,6 +13,10 @@ public class MoodManager : MonoBehaviour
     public Sprite sadSprite;
     public Sprite conflictedSprite;
     public Sprite eatingSprite;
+
+    public RawImage[] heartRawImages;
+    public RawImage[] burgerRawImages;
+
     private bool feedRunning = false;
     private bool canFeed = true;
     public bool storymode = false;
@@ -25,6 +30,7 @@ public class MoodManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L)) CheerUp();
 
         UpdateMoodSprite();
+        UpdateUIHeartsAndBurgers();
     }
 
     public void GetHungry() => hunger = Mathf.Max(hunger - 1, 0);
@@ -51,6 +57,19 @@ public class MoodManager : MonoBehaviour
             {
                 sr.sprite = targetSprite;
             }
+        }
+    }
+
+    private void UpdateUIHeartsAndBurgers()
+    {
+        for (int i = 0; i < heartRawImages.Length; i++)
+        {
+            heartRawImages[i].gameObject.SetActive(i < happiness);
+        }
+
+        for (int i = 0; i < burgerRawImages.Length; i++)
+        {
+            burgerRawImages[i].gameObject.SetActive(i < hunger);
         }
     }
 

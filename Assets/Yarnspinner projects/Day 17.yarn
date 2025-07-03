@@ -10,10 +10,12 @@ Ughh.. those hallucinations from last night were so wei-
 You look around the room and see that nothing from last night is gone...
 you weren't hallucination. 
 [i]You quickly reach for your phone[/i]
+<<set_enabled_in_unity "PhoneOpening" true>>
 ===
 
 title: D17D2
 ---
+<<set_enabled_in_unity "PeekoTweaking" true>>
 Peeko, what the hell is going on?
 //you see corupted peeko on your phone
 Peeko?? Are you okay?
@@ -28,28 +30,38 @@ title: D17D3
 
 title: D17D4
 ---
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: Why did it take you so long to help me?? don't you care about me?
 I tried to help you as quickly as I could! I'm sorry!!
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: Mmm, you know, I could maybeeee forgive you if you played Rock, Paper and scissors with me again?
 I- uh.. don't know im still pretty shaken up from what happened just now..
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: You really hate me don't you?? are you going to leave me alone again? I did so much for you.
 No no no, I'm sorry I'll play a quick game with you!
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: Yippieee :D
 //you play rock paper scissors
 ===
 
 title: D17D5
 ---
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: heyyy, I was wondering something... How does your world look like? :o
 Uhh, wow thats a weird question.. I guess the same as yours but.. 3D?
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: Oooh, that sounds super cool!! I would love for you to show me around your amazing world!
 haha if it was possible, I would Peeko!
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: Maybe because you can't show me around now, could you instead do me a favour?
 ...what kind of favour?
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: I need something from your microwave for a project of mine :D
 what kind of project?? and wait but how would I do that??
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: I'm making something special for you, it's a surprise, you wouldn't want to ruin my surprise right? D:
 No no no of course not.... I guess I'll help you but how would I get something from the microwave?
+<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: Mmm, maybe you could break the microwave apart some how? by like... smashing it?
 uhhh, okay, I'll try and find a way!
 //you play the microwave smashing game

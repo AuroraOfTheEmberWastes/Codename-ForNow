@@ -26,10 +26,10 @@ I'm really hungry, maybe I should get something from the fridge...
 title: D16D3
 ---
 [i]You open the fridge[/i]
-// <<set_enabled_in_unity "Pixel Burger PNG" true>>
+<<set_enabled_in_unity "Borgir" true>>
 Huh? I thought I had more in my fridge?
 [i]You get the burger out of the fridge, and warm it up in the microwave...[/i]
-
+<<set_enabled_in_unity "Borgir" false>>
 // PLAY microwave sound
 // <<wait 5>>
 // ENABLE post processing for 5 seconds

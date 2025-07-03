@@ -1,65 +1,50 @@
-﻿title: bed
+﻿title: Start
 ---
-Template dialogue!!!
-
+[b]Swipe left/right to look around.[/b]
+[b]Swipe up to move forward.[/b]
+[b]Swipe down to open your phone.[/b]
 ===
-
-
-
-
-
-title: Feed
----
-With a mouthful Hmmh Thank you! I loveee burgers :D
-<<enable_after_dialogue Dialogue>>
-===
-
 
 title: Story1
 ---
-<<set_enabled_in_unity testy false>>
+<<set_enabled_in_unity PeekoHatch true>>
+<<wait 3>>
+<<set_enabled_in_unity PeekoHatch false>>
+<<set_enabled_in_unity BedTamagotchi true>>
 The egg hatches and there it is, your new friend.
+Hi! I'm Peeko, your new best friend!
+You can play with me, talk with me and I'll always be there for you!
 
-Hi! I'm Peeko, your new best friend! You can play with me, talk with me and I'll always be there for you!
-
-Hi, I'm glad to meet you! We are going to have so much fun together!
+Hi, I'm glad to meet you! 
+We are going to have so much fun together!
 
 You're feeling a little excited
 
-Hi Peeko, I'm happy to have you as a friend, but what can I really do with you?
+Hi Peeko, I'm happy to have you as a friend, 
+but what can I really do with you?
 
 I'll show you around!
+Click on the Burger icon to head to the kitchen.
 
-<<go_to "Dialogue" "kitchen">>
-In the top left corner, you can see how hungry I am. You will have to feed me when I get hungry. Let's try it out!
+In the top left corner, you can see how hungry I am. 
+You will have to feed me when I get hungry. Let's try it out!
 ===
 
 title: Story2
 ---
+With a mouthful Hmmh Thank you! I loveee burgers
+
 After Peeko is done eating suddenly it's happiness is low.
 
-Oh no Peeko, What is wrong? Please don't be sad! How can I make you happy?
+Oh no Peeko, What is wrong? Please don't be sad! 
+How can I make you happy?
 
-You can play with me to make me happy... :(
+You can play with me to make me happy...
 
 Go to the play room and play a game with me.
-//enable playroom button
-<<enable_after_dialogue Dialogue>>
 ===
 
 title: Story3
----
-You are in the play area and you press to play 'Rock Paper Scissors' with Peeko
-
-when Peeko wins, the happiness goes up, when YOU win, Peeko gets mad. Peeko tells you you're cheated.
-
-when it reaches lower than 1 you loose the game and have to start over.
-
-So, you automatically lose.
-<<enable_after_dialogue Dialogue>>
-===
-
-title: Story4
 ---
 Yay! Thank you, I had so much fun!
 
@@ -67,8 +52,11 @@ Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that w
 
 Aww, okay, take a good rest!
 
-You put your phone away and start heading towards your bed.
+Put your phone away and start heading towards your bed.
+===
 
+title: bed
+---
 I'll just lay down for a second...
-<<enable_after_dialogue Dialogue>>
+<<load_scene "Day 2">>
 ===

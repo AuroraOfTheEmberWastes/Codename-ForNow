@@ -3652,7 +3652,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: D2S5
+          m_StringArgument: TimeSkip
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 694337535}
@@ -5278,6 +5278,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: cb6c9c6623802214ab7076d6ffbc57c1, type: 3}
+    - target: {fileID: 8483087017447889361, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

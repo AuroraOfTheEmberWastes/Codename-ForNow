@@ -1,12 +1,15 @@
-﻿title: StartD2
+﻿
+title: StartD2
 ---
 <<wait 2>>
 <<set_enabled_in_unity "Start Cover" false>>
-
+[i]BZZZTT...[/i]
+[i]Your phone is buzzing...[/i]
 ===
 
 title: D2S1
 ---
+<<wait  0.5>>
 Peeko: There you are!
 Peeko: I'm sooo hungry, please feed me!
 ===
@@ -25,13 +28,17 @@ I'm sorry Peeko, I can't I'll talk to you later
 
 Okay...
 <<set_enabled_in_unity DeskInt true>>
+<<declare $done = true>>
 ===
 
 title: D2S3
 ---
-Peeko: Play with me please! ...
+<<if $done is true>>
+    Peeko: Play with me please! ...
 
-Is that Peeko?
+    Is that Peeko?
+    <<set $done to false>>
+<<endif>>
 ===
 
 title: D2S4
@@ -59,11 +66,10 @@ But what if I'm not there, like just now? What do you do?
 Peeko: I just stay in my room and wait for you!
 Peeko: I'm just programmed like that!
 
-[i]Peeko wants to play...[/i]
+[i]Peeko wants to play Rock Paper Scissors...[/i]
 ===
 
 title: D2S5
 ---
-Timeskip
-//switch scene
+<<load_scene "Day 15">>
 ===

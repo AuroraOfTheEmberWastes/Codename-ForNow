@@ -252,6 +252,7 @@ public class IRL_Movement : MonoBehaviour
 		if (storymode)
 		{
 			D2S1.OnEventTrigger();
+			storymode = false;
 		}
 	}
 

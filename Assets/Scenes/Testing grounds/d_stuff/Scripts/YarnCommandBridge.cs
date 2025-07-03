@@ -107,7 +107,7 @@ public class YarnCommandBridge : MonoBehaviour
     }
 
     [YarnCommand("set_enabled_in_unity")]
-    public static void SetEnabledInUnity(string target, bool mode=true) 
+    public static void SetEnabledInUnity(string target, bool mode = true)
     {
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
         foreach (GameObject obj in allObjects)
@@ -118,6 +118,12 @@ public class YarnCommandBridge : MonoBehaviour
             }
         }
     }
+    
+    [YarnCommand("load_scene")]
+    public static void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }   
 
 
 

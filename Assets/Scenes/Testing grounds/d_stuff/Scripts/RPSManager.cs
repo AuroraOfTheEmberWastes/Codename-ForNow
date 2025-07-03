@@ -96,7 +96,7 @@ public class RockPaperScissorsManager : MonoBehaviour
 
     void UpdateScore()
     {
-        scoreText.text = $"You {playerScore} : {opponentScore} Tamagotchi";
+        scoreText.text = $"{playerScore} : {opponentScore}";
 
         if (playerScore == 2 || opponentScore == 2)
         {

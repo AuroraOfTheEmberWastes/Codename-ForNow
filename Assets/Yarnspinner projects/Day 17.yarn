@@ -1,0 +1,5 @@
+title: StartD17
+---
+<<wait 2>>
+<<set_enabled_in_unity "Start Cover" false>>
+===

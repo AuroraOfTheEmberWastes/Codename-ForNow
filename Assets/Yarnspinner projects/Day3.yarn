@@ -39,5 +39,10 @@ Wow! This space... It's way bigger! And I'm so close to you
 
 I'm a little tired, I want to sleep... zzz
 
-<<load_scene "Day 16(day)">>
+<<load_scene "Day 16 (day)">>
+===
+
+title: TVCables
+---
+<<set_enabled_in_unity CableGame true>>
 ===

@@ -9083,6 +9083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hunger: 2
   happiness: 2
+  eatingSound: {fileID: 0}
   characterSpriteRenderers:
   - {fileID: 6561699285220305508}
   - {fileID: 9035300964887618568}
@@ -10372,6 +10373,7 @@ MonoBehaviour:
   sprite2: {fileID: 21300000, guid: ebc82c18e34444740944cc0883f0e6d1, type: 3}
   sprite3: {fileID: 21300000, guid: 4127005c1ccf218438bb9d839a755654, type: 3}
   sprite4: {fileID: 21300000, guid: 23e46a66b6fedae42a6023c30b80a574, type: 3}
+  interactionObject: {fileID: 0}
 --- !u!1 &7656594635565604881
 GameObject:
   m_ObjectHideFlags: 0

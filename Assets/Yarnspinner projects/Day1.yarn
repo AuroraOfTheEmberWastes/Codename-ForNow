@@ -7,11 +7,11 @@
 
 title: Story1
 ---
-<<set_enabled_in_unity PeekoHatch true>>
+<<set_enabled_in_unity PeekoHatch true>> <<set_enabled_in_unity "Egg Hatching S" true>>
 <<wait 3>>
 <<set_enabled_in_unity PeekoHatch false>>
 <<set_enabled_in_unity BedTamagotchi true>>
-[i]The egg hatches and there it is, your new friend.[/i] //Play sounds EggHatching
+[i]The egg hatches and there it is, your new friend.[/i]
 Peeko: Hi! I'm Peeko, your new best friend! //Play sound CharacterDialogue
 Peeko: You can play with me, talk with me and I'll always be there for you! //Play sound CharacterDialogue
 Peeko: Hi, I'm glad to meet you! //Play sound CharacterDialogue

@@ -1,36 +1,36 @@
 ﻿title: D3S1
 ---
 You: Ugh, I'm so tired
-[i]BZZZTT...[/i]
+[i]BZZZTT...[/i] //Play sound PhoneBuzzing
 [i]While still trying to get out of bed and having your eyes half closed you respond...[/i]
 You: Wait! Peeko, I'm here don't worry...
 ===
 
 title: D3S2
 ---
-Peeko: Hey! Where have you been! I'm starving
+Peeko: Hey! Where have you been! I'm starving //Play sound CharacterDialogue
 
 You: Ohh Peeko, please don't be mad, I accidentaly fell asleep!
-Peeko: Feed me and play with me!
+Peeko: Feed me and play with me! //Play sound CharacterDialogue
 ===
 
 title: D3S3
 ---
-Peeko: Ah, that's way better!
-Peeko: You know, I came up with an amazing idea! 
-Peeko: Something that could make us even be closer!
+Peeko: Ah, that's way better! //Play sound CharacterDialogue
+Peeko: You know, I came up with an amazing idea! //Play sound CharacterDialogue
+Peeko: Something that could make us even be closer! //Play sound CharacterDialogue
 You: What Peeko? What's your idea? Pleeasee tell me!
-Peeko: Well, what if, you connect me somewhere on a bigger screen?
-Peeko: I could be closer to you!
+Peeko: Well, what if, you connect me somewhere on a bigger screen? //Play sound CharacterDialogue
+Peeko: I could be closer to you! //Play sound CharacterDialogue
 You: What do you mean? Like, plugging you into my TV?
-Peeko: Perhaps? That would be an amazing idea...
+Peeko: Perhaps? That would be an amazing idea... //Play sound CharacterDIalogue
 ===
 
 title: D3S4
 ---
-Peeko: Wow! This space... It's way bigger! And I'm so close to you
+Peeko: Wow! This space... It's way bigger! And I'm so close to you //Play sound CharacterDialogue
 You: Yay! Your idea worked out really well.
-Peeko: I'm a little tired, I want to sleep... zzz
+Peeko: I'm a little tired, I want to sleep... zzz //Play sound CharacterDialogue
 You: All that work made me a little tired too, I should lay down for a second...
 
 <<load_scene "Day 16 (day)">>
@@ -38,5 +38,5 @@ You: All that work made me a little tired too, I should lay down for a second...
 
 title: TVCables
 ---
-<<set_enabled_in_unity CableGame true>>
+<<set_enabled_in_unity CableGame true>> //Play sound MiniGameBackgroundMusic, play sound Complete when connecting the wires
 ===

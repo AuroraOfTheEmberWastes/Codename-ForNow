@@ -196,6 +196,8 @@ MonoBehaviour:
   storymode: 1
   timesPlayed: 0
   moodManager: {fileID: 4625241108488028439}
+  winSound: {fileID: 0}
+  loseSound: {fileID: 0}
 --- !u!1 &372563678355078677
 GameObject:
   m_ObjectHideFlags: 0

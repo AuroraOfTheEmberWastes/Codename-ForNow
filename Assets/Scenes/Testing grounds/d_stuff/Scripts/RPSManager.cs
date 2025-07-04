@@ -33,6 +33,8 @@ public class RockPaperScissorsManager : MonoBehaviour
     public int timesPlayed = 0;
 
     public MoodManager moodManager;
+    public AudioSource winSound;
+    public AudioSource loseSound;
 
     void OnEnable()
     {
@@ -93,12 +95,14 @@ public class RockPaperScissorsManager : MonoBehaviour
             resultText.text += "\nYou win this round!";
             playerScore++;
             tamagotchiRenderer.sprite = loseSprite;
+            winSound.Play();
         }
         else
         {
             resultText.text += "\nYou lost this round!";
             opponentScore++;
             tamagotchiRenderer.sprite = winSprite;
+            loseSound.Play();
         }
     }
 

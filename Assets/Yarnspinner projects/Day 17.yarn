@@ -2,73 +2,59 @@ title: StartD17
 ---
 <<wait 2>>
 <<set_enabled_in_unity "Start Cover" false>>
+You:Ughh.. those hallucinations from last night were so wei-
+[i]You look around the room and see that nothing from last night is gone...
+[b]you weren't hallucinating.[/b][/I]
+[i]You quickly reach for your phone[/i]
 ===
 
+// Opening phone
 title: D17D1
 ---
-Ughh.. those hallucinations from last night were so wei-
-You look around the room and see that nothing from last night is gone...
-you weren't hallucination. 
-[i]You quickly reach for your phone[/i]
-<<set_enabled_in_unity "PhoneOpening" true>>
-===
-
-title: D17D2
----
 <<set_enabled_in_unity "PeekoTweaking" true>>
-Peeko, what the hell is going on?
+You: Peeko, what the hell is going on?
 //you see corupted peeko on your phone
-Peeko?? Are you okay?
-===
-
-title: D17D3
----
+You: Peeko?? Are you okay?
 [i]You start looking around the room for anything that can help you translate the letters.[/i]
 //the code mini games begins
-
 ===
 
-title: D17D4
+// After code mini game
+title: D17D3
 ---
-<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: Why did it take you so long to help me?? don't you care about me?
-I tried to help you as quickly as I could! I'm sorry!!
-<<set_enabled_in_unity "CharacterDialogue" true>>
+You: I tried to help you as quickly as I could! I'm sorry!!
+//sounds (talk)
 Peeko: Mmm, you know, I could maybeeee forgive you if you played Rock, Paper and scissors with me again?
-I- uh.. don't know im still pretty shaken up from what happened just now..
-<<set_enabled_in_unity "CharacterDialogue" true>>
+You: I- uh.. don't know im still pretty shaken up from what happened just now..
+//sounds (talk)
 Peeko: You really hate me don't you?? are you going to leave me alone again? I did so much for you.
-No no no, I'm sorry I'll play a quick game with you!
-<<set_enabled_in_unity "CharacterDialogue" true>>
+You: No no no, I'm sorry I'll play a quick game with you!
+//sounds (talk)
 Peeko: Yippieee :D
 //you play rock paper scissors
 ===
 
-title: D17D5
+// after rock paper scissors
+title: D17D4
 ---
-<<set_enabled_in_unity "CharacterDialogue" true>>
 Peeko: heyyy, I was wondering something... How does your world look like? :o
-Uhh, wow thats a weird question.. I guess the same as yours but.. 3D?
-<<set_enabled_in_unity "CharacterDialogue" true>>
+You: Uhh, wow thats a weird question.. I guess the same as yours but.. 3D?
 Peeko: Oooh, that sounds super cool!! I would love for you to show me around your amazing world!
-haha if it was possible, I would Peeko!
-<<set_enabled_in_unity "CharacterDialogue" true>>
+You: haha if it was possible, I would Peeko!
 Peeko: Maybe because you can't show me around now, could you instead do me a favour?
-...what kind of favour?
-<<set_enabled_in_unity "CharacterDialogue" true>>
+You: ...what kind of favour?
 Peeko: I need something from your microwave for a project of mine :D
-what kind of project?? and wait but how would I do that??
-<<set_enabled_in_unity "CharacterDialogue" true>>
-Peeko: I'm making something special for you, it's a surprise, you wouldn't want to ruin my surprise right? D:
-No no no of course not.... I guess I'll help you but how would I get something from the microwave?
-<<set_enabled_in_unity "CharacterDialogue" true>>
+You: what kind of project?? and wait but how would I do that??
+You: but how would I get something from the microwave?
 Peeko: Mmm, maybe you could break the microwave apart some how? by like... smashing it?
-uhhh, okay, I'll try and find a way!
+You: uhhh, okay, I'll try and find a way!
 //you play the microwave smashing game
 ===
 
-title: D17D6
+// After microwave minigame
+title: D17D5
 ---
-wow *sigh* smashing the microwave really took a lot of energy out of me... I should take a quick nap..
+You: wow *sigh* smashing the microwave really took a lot of energy out of me... I should take a quick nap..
 [i]You walk over to your bed and fall on top of it immediately passing out...[/i]
 ===

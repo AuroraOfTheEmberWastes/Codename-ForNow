@@ -12,7 +12,7 @@ title: StartD16
 // Set movement trigger and phone to active, interact with Peeko
 title: D16D1
 ---
-<<set_enabled_in_unity "CharacterDialogue" true>>
+<<set_enabled_in_unity "PeekoSad" true>>
 Peeko: You were gone for so long... //Play sound CharacterDialogue
 //Peeko Happiness is low so play RPS
 ===
@@ -39,6 +39,7 @@ title: microwave
 // PLAY microwave sound
 // <<wait 5>>
 // ENABLE post processing for 5 seconds
+<<set_enabled_in_unity "WeirdSound" true>>
 You: What! What's happening??
 You: Peeko? Is that you?? What just happened?!
 ===
@@ -46,7 +47,7 @@ You: Peeko? Is that you?? What just happened?!
 title: D16D4
 ---
 [i]You pick up your phone[/i]
-
+<<set_enabled_in_unity "PeekoMad" true>>
 Peeko: Ahh I'm soooo hungryyyy //Play sound CharacterDialogue
 
 You: Peeko? Please tell me what happened?
@@ -62,7 +63,7 @@ Peeko: Did you like yours? //Play sound CharacterDialogue
 
 You: What?
 You: Did I like what?
-
+<<set_enabled_in_unity "PeekoHappy" true>>
 Peeko: Your burger...  //Play sound CharacterDialogue
 
 You: How did you-

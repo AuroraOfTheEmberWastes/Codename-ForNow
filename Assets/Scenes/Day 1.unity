@@ -3233,12 +3233,80 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionId
+      value: 8d7d6133-3594-44b8-b553-5ebbdff2a64d
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 79dc09a2-16ae-4908-b7de-2c72ce1b102f
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionName
+      value: 'IRL/IRL_Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: 'IRL/Touch[/Simulated Touchscreen/press,/Device Simulator Touchscreen/press]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 953799985}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1297655838}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1297655838}
     - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: IRL_Movement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Interactibles, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036663490228787041, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7687013981718348401, guid: f0f4a896143c11e4da1ac96cceceda2e, type: 3}
       propertyPath: m_Name

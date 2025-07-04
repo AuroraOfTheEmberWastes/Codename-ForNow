@@ -74,7 +74,7 @@ title: TimeSkip
 ---
 <<wait 1>>
 <<set_enabled_in_unity "TimeSkip BG" true>>
-[i]For the next couple of days, you and Peeko have lots of fun together...
+[i]For the next couple of days, you and Peeko have lots of fun together
 The endless feeling of loneliness is finally gone, you have a new friend.
 That will never leave your side...
 Peeko and you have deep conversations,

@@ -3,7 +3,8 @@ title: StartD2
 ---
 <<wait 2>>
 <<set_enabled_in_unity "Start Cover" false>>
-[i]BZZZTT...[/i] // play sound PhoneBuzzing
+<<set_enabled_in_unity BuzzPhone true>>
+[i]BZZZTT...[/i]
 [i]Your phone is buzzing...[/i]
 ===
 
@@ -16,7 +17,7 @@ Peeko: I'm sooo hungry, please feed me! // play sound CharacterDialogue
 
 title: D2S2
 ---
-// After feeding Peeko // play sound PeekoEating
+<<set_enabled_in_unity EatingPeeko true>>
 Peeko: Omnomnom, thanksss! Food makes me feel good // play sound CharacterDialogue
 
 You: No problem, I wish I could spend more time with you, 
@@ -34,8 +35,8 @@ Peeko: Okay... // play sound CharacterDialogue
 title: D2S3
 ---
 <<if $done is true>>
-    Peeko: Play with me please! ... // play sound PhoneBuzzing
-
+    <<set_enabled_in_unity BuzzPhone2 true>>
+    Peeko: Play with me please! ... 
     You: Is that Peeko?
     <<set $done to false>>
 <<endif>>

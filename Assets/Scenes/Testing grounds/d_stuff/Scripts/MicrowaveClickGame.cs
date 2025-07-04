@@ -20,6 +20,7 @@ public class MicrowaveClickGame : MonoBehaviour
     public Sprite sprite2; // 34–66 clicks
     public Sprite sprite3; // 67–99 clicks
     public Sprite sprite4; // 100 clicks
+    public InteractionObject interactionObject;
 
     void Update()
     {
@@ -70,8 +71,8 @@ public class MicrowaveClickGame : MonoBehaviour
 
     public IEnumerator endingGame()
     {
-        yield return new WaitForSeconds(3f);
-
+        yield return new WaitForSeconds(1.5f);
+        interactionObject.OnEventTrigger();
         foreach (GameObject obj in enableObj)
         {
             if (obj != null)

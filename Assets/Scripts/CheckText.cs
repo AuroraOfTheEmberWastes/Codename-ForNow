@@ -6,6 +6,7 @@ using TMPro;
 public class CheckText : MonoBehaviour
 {
 	public string code;
+	public Destroyer destroyer;
 
 
 	public void Verify()
@@ -14,6 +15,7 @@ public class CheckText : MonoBehaviour
 
 		if (code == text)
 		{
+			destroyer.DestroyTarget();
 			GetComponent<InteractionObject>().OnEventTrigger();
 		}else
 		{

@@ -13,6 +13,8 @@ You:Ughh.. those hallucinations from last night were so wei-
 // Opening phone
 title: D17D1
 ---
+<<wait 1>>
+<<set_enabled_in_unity "CanvasGood" false>>
 <<set_enabled_in_unity "PeekoTweaking" true>>
 You: Peeko, what the hell is going on?
 //you see corupted peeko on your phone
@@ -24,6 +26,7 @@ You: Peeko?? Are you okay?
 // After code mini game
 title: D17D3
 ---
+<<set_enabled_in_unity "CanvasGood" true>>
 Peeko: Why did it take you so long to help me?? don't you care about me?
 You: I tried to help you as quickly as I could! I'm sorry!!
 //sounds (talk)
@@ -51,12 +54,20 @@ You: what kind of project?? and wait but how would I do that??
 You: but how would I get something from the microwave?
 Peeko: Mmm, maybe you could break the microwave apart some how? by like... smashing it?
 You: uhhh, okay, I'll try and find a way!
-//you play the microwave smashing game
+<<set_enabled_in_unity "MicrowaveGame" true>>
+<<set_enabled_in_unity "PhoneW" false>>
+<<set_enabled_in_unity "Kitchen" false>>
+<<set_enabled_in_unity "Bedroom" false>>
+<<set_enabled_in_unity "RockPaperScissors" false>>
+<<set_enabled_in_unity "FBX_Apartment" true>>
 ===
 
 // After microwave minigame
 title: D17D5
 ---
+<<set_enabled_in_unity "MicrowaveGame" false>>
+<<set_enabled_in_unity "FBX_Apartment" true>>
 You: wow *sigh* smashing the microwave really took a lot of energy out of me... I should take a quick nap..
 [i]You walk over to your bed and fall on top of it immediately passing out...[/i]
+<<load_scene "Day 21">>
 ===

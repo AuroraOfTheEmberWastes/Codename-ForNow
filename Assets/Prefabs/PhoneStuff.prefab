@@ -5715,7 +5715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8313488062814322689
 Transform:
   m_ObjectHideFlags: 0
@@ -8062,6 +8062,7 @@ MonoBehaviour:
   hungerUI: {fileID: 9137665810711507853}
   happinessUI: {fileID: 5084608299329995759}
   extra: {fileID: 6630198087424286027}
+  cypher: {fileID: 0}
 --- !u!114 &896153504244748957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10201,7 +10202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &985470292331589412
 RectTransform:
   m_ObjectHideFlags: 0

@@ -7,52 +7,41 @@
 
 title: Story1
 ---
-<<set_enabled_in_unity PeekoHatch true>>
+<<set_enabled_in_unity PeekoHatch true>> <<set_enabled_in_unity "Egg Hatching S" true>>
 <<wait 3>>
 <<set_enabled_in_unity PeekoHatch false>>
 <<set_enabled_in_unity BedTamagotchi true>>
-The egg hatches and there it is, your new friend. //Play sounds EggHatching
-Hi! I'm Peeko, your new best friend! //Play sound CharacterDialogue
-You can play with me, talk with me and I'll always be there for you! //Play sound CharacterDialogue
-
-Hi, I'm glad to meet you! //Play sound CharacterDialogue
-We are going to have so much fun together! //Play sound CharacterDialogue
-
+[i]The egg hatches and there it is, your new friend.[/i]
+Peeko: Hi! I'm Peeko, your new best friend! //Play sound CharacterDialogue
+Peeko: You can play with me, talk with me and I'll always be there for you! //Play sound CharacterDialogue
+Peeko: Hi, I'm glad to meet you! //Play sound CharacterDialogue
+Peeko: We are going to have so much fun together! //Play sound CharacterDialogue
 You: Hi, I'm glad to meet you! 
 Peeko: We are going to have so much fun together!
 [i]You're feeling a little excited[/i]
-
 You: Hi Peeko, I'm happy to have you as a friend, 
 You:but what can I really do with you?
-
-I'll show you around! //Play sound CharacterDialogue
-Click on the Burger icon to head to the kitchen. //Play sound CharacterDialogue
-
-In the top left corner, you can see how hungry I am. //Play sound CharacterDialogue
-You will have to feed me when I get hungry. Let's try it out! //Play sound CharacterDialogue
+Peeko: I'll show you around! //Play sound CharacterDialogue
+Peeko: Click on the Burger icon to head to the kitchen. //Play sound CharacterDialogue
+Peeko: In the top left corner, you can see how hungry I am. //Play sound CharacterDialogue
+Peeko: You will have to feed me when I get hungry. Let's try it out! //Play sound CharacterDialogue
 ===
 
 title: Story2
 ---
-With a mouthful Hmmh Thank you! I loveee burgers //Play sound PeekoEating, play sound CharacterDIalogue
-
-After Peeko is done eating suddenly it's happiness is low.
-
-Oh no Peeko, What is wrong? Please don't be sad! 
-How can I make you happy?
-
-You can play with me to make me happy... //Play sound CharacterDialogue
-
-Go to the play room and play a game with me. //Play sound CharacterDIalogue
+Peeko: Hmmh Thank you! I loveee burgers //Play sound PeekoEating, play sound CharacterDIalogue
+[i]After Peeko is done eating suddenly it's happiness is low.[/i]
+You: Oh no Peeko, What is wrong? Please don't be sad! 
+You: How can I make you happy?
+Peeko: You can play with me to make me happy... //Play sound CharacterDialogue
+Peeko: Go to the play room and play a game with me. //Play sound CharacterDIalogue
 ===
 
 title: Story3
 ---
-Yay! Thank you, I had so much fun! //Play sound CharacterDialogue
-
+Peeko: Yay! Thank you, I had so much fun! //Play sound CharacterDialogue
 You: Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that we can play again!
-
-Aww, okay, take a good rest! //Play sound CharacterDialogue
+Peeko: Aww, okay, take a good rest! //Play sound CharacterDialogue
 
 [i]Put your phone away and start heading towards your bed.[/i]
 <<set_enabled_in_unity Bed true>>

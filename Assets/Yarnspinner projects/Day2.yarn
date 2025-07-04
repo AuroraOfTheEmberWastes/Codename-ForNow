@@ -3,30 +3,30 @@ title: StartD2
 ---
 <<wait 2>>
 <<set_enabled_in_unity "Start Cover" false>>
-[i]BZZZTT...[/i]
+[i]BZZZTT...[/i] // play sound PhoneBuzzing
 [i]Your phone is buzzing...[/i]
 ===
 
 title: D2S1
 ---
 <<wait  0.5>>
-Peeko: There you are!
-Peeko: I'm sooo hungry, please feed me!
+Peeko: There you are! // play sound CharacterDialogue
+Peeko: I'm sooo hungry, please feed me! // play sound CharacterDialogue
 ===
 
 title: D2S2
 ---
-// After feeding Peeko
-Peeko: Omnomnom, thanksss! Food makes me feel good
+// After feeding Peeko // play sound PeekoEating
+Peeko: Omnomnom, thanksss! Food makes me feel good // play sound CharacterDialogue
 
 You: No problem, I wish I could spend more time with you, 
 You: but I really need to work on something...
 
-Peeko: Nooo! Please stay for a little longer.
+Peeko: Nooo! Please stay for a little longer. // play sound CharacterDialogue
 
 You: I'm sorry Peeko, I can't I'll talk to you later
 
-Peeko: Okay...
+Peeko: Okay... // play sound CharacterDialogue
 <<set_enabled_in_unity DeskInt true>>
 <<declare $done = true>>
 ===
@@ -34,7 +34,7 @@ Peeko: Okay...
 title: D2S3
 ---
 <<if $done is true>>
-    Peeko: Play with me please! ...
+    Peeko: Play with me please! ... // play sound PhoneBuzzing
 
     You: Is that Peeko?
     <<set $done to false>>
@@ -43,28 +43,28 @@ title: D2S3
 
 title: D2S4
 ---
-Peeko: That's way better! We should get to know each other better. 
-Peeko: Since, we're spending so much time together...
+Peeko: That's way better! We should get to know each other better. // play sound CharacterDialogue
+Peeko: Since, we're spending so much time together... // play sound CharacterDialogue
 
-Peeko: Let me ask you something! What's your favorite color?
+Peeko: Let me ask you something! What's your favorite color? // play sound CharacterDialogue
 
 ->Purple
-    Peeko: Oooohh so pretty! Purple like me
+    Peeko: Oooohh so pretty! Purple like me // play sound CharacterDialogue
 ->Purple
-    Peeko: Oooohh so pretty! Purple like me
+    Peeko: Oooohh so pretty! Purple like me // play sound CharacterDialogue
 You: Yes, just like you!
 ...
 [i]After talking for a bit you ask Peeko another question[/i]
 
 You: Peeko, don't you ever get the feeling that you're bored?
 
-Peeko: Never! Why would I?
-Peeko: I have you! >o<
+Peeko: Never! Why would I? // play sound CharacterDialogue
+Peeko: I have you! >o< // play sound CharacterDialogue
 
 You: But what if I'm not there, like just now? What do you do?
 
-Peeko: I just stay in my room and wait for you!
-Peeko: I'm just programmed like that!
+Peeko: I just stay in my room and wait for you! // play sound CharacterDialogue
+Peeko: I'm just programmed like that! // play sound CharacterDialogue
 
 [i]Peeko wants to play Rock Paper Scissors...[/i]
 ===
@@ -74,11 +74,11 @@ title: TimeSkip
 ---
 <<wait 1>>
 <<set_enabled_in_unity "TimeSkip BG" true>>
-[i]For the next couple of days, you and Peeko have lots of fun together
-The endless feeling of loneliness is finally gone, you have a new friend.
-That will never leave your side...
-Peeko and you have deep conversations,
-you talk about everything you could ever think of with each other.
-Especially the existence of the world...
+[i]For the next couple of days, you and Peeko have lots of fun together [/i]
+[i]The endless feeling of loneliness is finally gone, you have a new friend. [/i]
+[i]That will never leave your side... [/i]
+[i]Peeko and you have deep conversations, [/i]
+[i]you talk about everything you could ever think of with each other. [/i]
+[i]Especially the existence of the world... [/i]
 <<load_scene "Day 15">>
 ===

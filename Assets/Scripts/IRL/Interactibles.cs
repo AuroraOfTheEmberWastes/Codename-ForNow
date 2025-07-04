@@ -8,7 +8,6 @@ public class Interactibles : MonoBehaviour
     private Vector3 playerPosition;
     private int playerOrientation;
     private float playerMovement;
-    private Dictionary<Vector3, GameObject> interactionObjects;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,11 +15,6 @@ public class Interactibles : MonoBehaviour
         
         
         
-        interactionObjects = new Dictionary<Vector3, GameObject>();
-        foreach(Transform child in transform)
-        {
-            interactionObjects.Add(child.transform.position, child.gameObject);
-        }
 
 
 	}
@@ -28,8 +22,26 @@ public class Interactibles : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
+
+
+	    Dictionary<Vector3, GameObject> interactionObjects;
+
         if (context.canceled)
 		{
+
+			interactionObjects = new Dictionary<Vector3, GameObject>();
+			foreach (Transform child in transform)
+			{
+				if (child.gameObject.activeInHierarchy)
+				{
+					interactionObjects.Add(child.transform.position, child.gameObject);
+				}
+			}
+
+
+
+
+
 			//updating these
 			playerPosition = player.gameObject.transform.position;
 			playerOrientation = player.playerOrientation;

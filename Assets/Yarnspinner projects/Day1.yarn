@@ -53,6 +53,7 @@ Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that w
 Aww, okay, take a good rest!
 
 Put your phone away and start heading towards your bed.
+<<set_enabled_in_unity Bed true>>
 ===
 
 title: bed

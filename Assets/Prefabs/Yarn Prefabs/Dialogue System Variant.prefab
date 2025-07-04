@@ -177,7 +177,7 @@ MonoBehaviour:
       Touchscreen/primaryTouch/tap]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: IRL
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1001 &2117699124594191899

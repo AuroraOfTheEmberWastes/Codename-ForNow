@@ -3,21 +3,21 @@ title: StartD2
 ---
 <<wait 2>>
 <<set_enabled_in_unity "Start Cover" false>>
-[i]BZZZTT...[/i]
+[i]BZZZTT...[/i] // play sound PhoneBuzzing
 [i]Your phone is buzzing...[/i]
 ===
 
 title: D2S1
 ---
 <<wait  0.5>>
-Peeko: There you are!
-Peeko: I'm sooo hungry, please feed me!
+Peeko: There you are! // play sound CharacterDialogue
+Peeko: I'm sooo hungry, please feed me! // play sound CharacterDialogue
 ===
 
 title: D2S2
 ---
-// After feeding Peeko
-Peeko: Omnomnom, thanksss! Food makes me feel good
+// After feeding Peeko // play sound PeekoEating
+Peeko: Omnomnom, thanksss! Food makes me feel good // play sound CharacterDialogue
 
 You: No problem, I wish I could spend more time with you, 
 You: but I really need to work on something...

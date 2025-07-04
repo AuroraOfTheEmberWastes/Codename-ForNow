@@ -1,9 +1,14 @@
 title: StartD16N
 ---
+<<set_enabled_in_unity "WeirdSound" true>>
 [i]You wake up from a really loud noise[/i] //play sound microwave smashing
+<<set_enabled_in_unity "PeekoMad" true>>
 Peeko: YOU! //play sound CharacterDialogue
+<<set_enabled_in_unity "PeekoMad2" true>>
 Peeko: COME HERE //play sound CharacterDialogue
+<<set_enabled_in_unity "PeekoMad3" true>>
 Peeko: I NEED YOU //play sound CharacterDialogue
+<<set_enabled_in_unity "PeekoMad4" true>>
 Peeko: [b]NOW[/b] //play sound CharacterDialogue
 <<wait 1>>
 <<set_enabled_in_unity "Start Cover" false>>
@@ -16,12 +21,14 @@ You: I'm just tired, let's finish this quickly and go back to sleep...
 
 title: D16N1
 ---
+<<set_enabled_in_unity "PeekoMad5" true>>
 Peeko: WHAT TOOK YOU SO LONG?! //play sound CharacterDialogue
 You: I'm so sorry Peeko! I was sleeping and it is the middle of the night...
 ===
 
 title: D16N2
 ---
+<<set_enabled_in_unity "PeekoSad" true>>
 Peeko: I'm sorry for attacking you in the middle of the night, //play sound CharacterDialogue
 Peeko: please forgive me //play sound CharacterDialogue
 Peeko: I like you so much, it's just, it's soooo empty and lonely in here, //play sound CharacterDialogue

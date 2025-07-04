@@ -231,7 +231,7 @@ public class IRL_Movement : MonoBehaviour
     }
     #endregion
 
-    private void OpenTamagochi()
+    public void OpenTamagochi()
     {
         phonePullout.PullOut();
         movementTrigger.SetActive(false);

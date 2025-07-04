@@ -3,9 +3,8 @@ title: StartD21
 <<wait  2>>
 <<set_enabled_in_unity "Start Cover" false>>
 
-[i]Your eyes open slowly, while pain throbs through your body. Your arms seem to be sore. 
-Memories flood your mind, and with a slow move you sit up from the bed and walk out to the kitchen. [/i]
-// enable movement HERE
+[i]Your eyes open slowly, while pain throbs through your body. Your arms seem to be sore. [/i]
+[i]Memories flood your mind, and with a slow move you sit up from the bed and walk out to the kitchen. [/i]
 
 ===
 
@@ -36,20 +35,22 @@ Peeko: It's all for the good of our friendship, trust me.
 Peeko: [b]Let me take over your body, that way we can be together forever. We'll never have to be apart again.[/b]
 You:
 ->Oh...that sounds nice. I won't have to be lonely again, because I'll always have you Peeko.
-Peeko:Finally you understood. Let's get to work then. 
-Peeko: Remember the microwave you smashed? 
-Peeko:Use the cable that was inside, 
-Peeko: carefully make an incition in your arm and connect yourself with the cable to the phone.
-Peeko: I can pass through to your brain that way.
+    Peeko:Finally you understood. Let's get to work then. 
+    Peeko: Remember the microwave you smashed? 
+    Peeko:Use the cable that was inside, 
+    Peeko: carefully make an incition in your arm and connect yourself with the cable to the phone.
+    Peeko: I can pass through to your brain that way.
+    <<set_enabled_in_unity "Microwave" true>>
 // OBJECTIVE: pick up the cable at the microwave
 ->What? Fuse our minds? Take over my body? No-I can't- this is crazy!
-Peeko: So you don't want to do this for me? 
-Peeko: You want me gone is that it? You hate me! 
-Peeko: You've always hated me, I knew it!
-You: I thought you were normal! I was just looking for an app to kill time, and chase off the loneliness. 
-You: I can't do what you're asking me to. 
-You: [b]I'm my own person, you're an app.[/b]
-[i]Find a way to get rid of Peeko[/i]
+    Peeko: So you don't want to do this for me? 
+    Peeko: You want me gone is that it? You hate me! 
+    Peeko: You've always hated me, I knew it!
+    You: I thought you were normal! I was just looking for an app to kill time, and chase off the loneliness. 
+    You: I can't do what you're asking me to. 
+    You: [b]I'm my own person, you're an app.[/b]
+    [i]Find a way to get rid of Peeko[/i]
+    <<set_enabled_in_unity "LivingTable2" true>>
 ===
 
 // PICKUP MICROWAVE CABLE

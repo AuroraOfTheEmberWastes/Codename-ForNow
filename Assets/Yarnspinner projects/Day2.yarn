@@ -19,14 +19,14 @@ title: D2S2
 // After feeding Peeko
 Peeko: Omnomnom, thanksss! Food makes me feel good
 
-No problem, I wish I could spend more time with you, 
-but I really need to work on something...
+You: No problem, I wish I could spend more time with you, 
+You: but I really need to work on something...
 
 Peeko: Nooo! Please stay for a little longer.
 
-I'm sorry Peeko, I can't I'll talk to you later
+You: I'm sorry Peeko, I can't I'll talk to you later
 
-Okay...
+Peeko: Okay...
 <<set_enabled_in_unity DeskInt true>>
 <<declare $done = true>>
 ===
@@ -36,7 +36,7 @@ title: D2S3
 <<if $done is true>>
     Peeko: Play with me please! ...
 
-    Is that Peeko?
+    You: Is that Peeko?
     <<set $done to false>>
 <<endif>>
 ===
@@ -52,16 +52,16 @@ Peeko: Let me ask you something! What's your favorite color?
     Peeko: Oooohh so pretty! Purple like me
 ->Purple
     Peeko: Oooohh so pretty! Purple like me
-Yes, just like you!
+You: Yes, just like you!
 ...
 [i]After talking for a bit you ask Peeko another question[/i]
 
-Peeko, don't you ever get the feeling that you're bored?
+You: Peeko, don't you ever get the feeling that you're bored?
 
 Peeko: Never! Why would I?
 Peeko: I have you! >o<
 
-But what if I'm not there, like just now? What do you do?
+You: But what if I'm not there, like just now? What do you do?
 
 Peeko: I just stay in my room and wait for you!
 Peeko: I'm just programmed like that!

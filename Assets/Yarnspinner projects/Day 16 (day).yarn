@@ -20,7 +20,7 @@ Peeko: You were gone for so long...
 // Set true when minigame is finished?
 title: D16D2
 ---
-I'm really hungry, maybe I should get something from the fridge...
+You: I'm really hungry, maybe I should get something from the fridge...
 [i]Go to the fridge[/i]
 ===
 
@@ -29,8 +29,8 @@ title: D16D3
 ---
 [i]You open the fridge[/i]
 <<set_enabled_in_unity "Borgir" true>>
-Huh? I thought I had more in my fridge?
-I'll warm it up in the microwave...
+You: Huh? I thought I had more in my fridge?
+You: I'll warm it up in the microwave...
 <<set_enabled_in_unity "Borgir" false>>
 ===
 
@@ -39,9 +39,8 @@ title: microwave
 // PLAY microwave sound
 // <<wait 5>>
 // ENABLE post processing for 5 seconds
-What! What's happening??
-
-Peeko? Is that you?? What just happened?!
+You: What! What's happening??
+You: Peeko? Is that you?? What just happened?!
 ===
 
 title: D16D4
@@ -50,7 +49,7 @@ title: D16D4
 
 Peeko: Ahh I'm soooo hungryyyy
 
-Peeko? Please tell me what happened?
+You: Peeko? Please tell me what happened?
 
 [i]Peeko does not answer[/i]
 [i]You decide to give Peeko some food in the hope you get an answer after that...[/i]
@@ -61,14 +60,14 @@ title: D16D5
 ---
 Peeko: Did you like yours?
 
-What?
-Did I like what?
+You: What?
+You: Did I like what?
 
 Peeko: Your burger... 
 
-How did you-
+You: How did you-
 [i]Peeko seems to not interact at all[/i]
-You know what, never mind...
-I'll just go to sleep
+You: You know what, never mind...
+You: I'll just go to sleep
 <<load_scene "Day 16(night)">>
 ===

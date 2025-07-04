@@ -8,16 +8,16 @@ Peeko: [b]NOW[/b]
 <<wait 1>>
 <<set_enabled_in_unity "Start Cover" false>>
 
-What?
-Why does everything seem so weird?
+You: What?
+You: Why does everything seem so weird?
 ...
-I'm just tired, let's finish this quickly and go back to sleep...
+You: I'm just tired, let's finish this quickly and go back to sleep...
 ===
 
 title: D16N1
 ---
 Peeko: WHAT TOOK YOU SO LONG?!
-I'm so sorry Peeko! I was sleeping and it is the middle of the night...
+You: I'm so sorry Peeko! I was sleeping and it is the middle of the night...
 ===
 
 title: D16N2
@@ -27,7 +27,7 @@ Peeko: please forgive me
 Peeko: I like you so much, it's just, it's soooo empty and lonely in here, 
 Peeko: I wish I could be there with you
 
-I know Peeko, I wish I could take you away from that dull place...
+You: I know Peeko, I wish I could take you away from that dull place...
 [i]You were so tired that you fell right asleep after talking to Peeko[/i]
 <<load_scene "Day 17">>
 ===

@@ -163,7 +163,7 @@ public class RockPaperScissorsManager : MonoBehaviour
     private IEnumerator endingGame()
     {
         yield return new WaitForSeconds(1f);
-
+        moodManager.happiness++;
         foreach (GameObject obj in enableObj)
         {
             if (obj != null)

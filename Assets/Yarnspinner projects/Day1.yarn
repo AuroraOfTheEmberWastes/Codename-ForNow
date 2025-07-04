@@ -18,10 +18,12 @@ You can play with me, talk with me and I'll always be there for you! //Play soun
 Hi, I'm glad to meet you! //Play sound CharacterDialogue
 We are going to have so much fun together! //Play sound CharacterDialogue
 
-You're feeling a little excited
+You: Hi, I'm glad to meet you! 
+Peeko: We are going to have so much fun together!
+[i]You're feeling a little excited[/i]
 
-Hi Peeko, I'm happy to have you as a friend, 
-but what can I really do with you?
+You: Hi Peeko, I'm happy to have you as a friend, 
+You:but what can I really do with you?
 
 I'll show you around! //Play sound CharacterDialogue
 Click on the Burger icon to head to the kitchen. //Play sound CharacterDialogue
@@ -48,16 +50,16 @@ title: Story3
 ---
 Yay! Thank you, I had so much fun! //Play sound CharacterDialogue
 
-Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that we can play again!
+You: Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that we can play again!
 
 Aww, okay, take a good rest! //Play sound CharacterDialogue
 
-Put your phone away and start heading towards your bed.
+[i]Put your phone away and start heading towards your bed.[/i]
 <<set_enabled_in_unity Bed true>>
 ===
 
 title: bed
 ---
-I'll just lay down for a second...
+[i]I'll just lay down for a second...[/i]
 <<load_scene "Day 2">>
 ===

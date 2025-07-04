@@ -6045,6 +6045,10 @@ PrefabInstance:
       propertyPath: eatingSprite
       value: 
       objectReference: {fileID: 21300000, guid: 2353cc63613a100488b6223731a16d59, type: 3}
+    - target: {fileID: 4679887457726889058, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4950047504174111034, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: m_text
       value: '0 : 0'

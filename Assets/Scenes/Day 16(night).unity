@@ -5117,6 +5117,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 991644984496050792, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
   m_PrefabInstance: {fileID: 1367740797}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1367740799 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8341107630869095213, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+  m_PrefabInstance: {fileID: 1367740797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1367740800 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 880849598046884880, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+  m_PrefabInstance: {fileID: 1367740797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1367740802 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 467054026300166163, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
@@ -7724,6 +7734,14 @@ PrefabInstance:
       propertyPath: D2S4
       value: 
       objectReference: {fileID: 853246081}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 1367740800}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: loseSound
+      value: 
+      objectReference: {fileID: 1367740799}
     - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: storymode
       value: 1

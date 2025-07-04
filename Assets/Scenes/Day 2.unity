@@ -1000,7 +1000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8503307776949517953, guid: e1a5770ce1d89a84688111e726cf5d2e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2154,7 +2154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: startAutomatically
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3228519527459755913, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.size
@@ -3091,6 +3091,16 @@ PrefabInstance:
 --- !u!4 &1063780401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 991644984496050792, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+  m_PrefabInstance: {fileID: 1063780400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1063780402 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8341107630869095213, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+  m_PrefabInstance: {fileID: 1063780400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1063780403 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 880849598046884880, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
   m_PrefabInstance: {fileID: 1063780400}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1063780405 stripped
@@ -5915,6 +5925,14 @@ PrefabInstance:
       propertyPath: D2S5
       value: 
       objectReference: {fileID: 1459330230}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 1063780403}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: loseSound
+      value: 
+      objectReference: {fileID: 1063780402}
     - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: storymode
       value: 1

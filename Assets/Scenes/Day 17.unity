@@ -4335,17 +4335,12 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
 --- !u!82 &1046648180 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8018827991359549461, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8341107630869095213, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
   m_PrefabInstance: {fileID: 1046648179}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1046648181 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6255275369497102702, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
-  m_PrefabInstance: {fileID: 1046648179}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1046648182 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7755449919255566671, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+  m_CorrespondingSourceObject: {fileID: 880849598046884880, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
   m_PrefabInstance: {fileID: 1046648179}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1046648183 stripped
@@ -7568,6 +7563,14 @@ PrefabInstance:
       propertyPath: D2S4
       value: 
       objectReference: {fileID: 512473013}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 1046648181}
+    - target: {fileID: 329455881912755619, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: loseSound
+      value: 
+      objectReference: {fileID: 1046648180}
     - target: {fileID: 882137037786276038, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 126.61
@@ -7767,11 +7770,11 @@ PrefabInstance:
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: madSound
       value: 
-      objectReference: {fileID: 1046648181}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: sadSound
       value: 
-      objectReference: {fileID: 1046648180}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: happiness
       value: 1
@@ -7783,7 +7786,7 @@ PrefabInstance:
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: happySound
       value: 
-      objectReference: {fileID: 1046648182}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: angrySprite
       value: 

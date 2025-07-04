@@ -1,6 +1,7 @@
 ﻿title: D3S1
 ---
 You: Ugh, I'm so tired
+<<set_enabled_in_unity PhoneBuzzing true>>
 [i]BZZZTT...[/i] //Play sound PhoneBuzzing
 [i]While still trying to get out of bed and having your eyes half closed you respond...[/i]
 You: Wait! Peeko, I'm here don't worry...
@@ -8,19 +9,21 @@ You: Wait! Peeko, I'm here don't worry...
 
 title: D3S2
 ---
+<<set_enabled_in_unity PeekoMad true>>
 Peeko: Hey! Where have you been! I'm starving //Play sound CharacterDialogue
-
 You: Ohh Peeko, please don't be mad, I accidentaly fell asleep!
 Peeko: Feed me and play with me! //Play sound CharacterDialogue
 ===
 
 title: D3S3
 ---
+<<set_enabled_in_unity PeekoHappy true>>
 Peeko: Ah, that's way better! //Play sound CharacterDialogue
 Peeko: You know, I came up with an amazing idea! //Play sound CharacterDialogue
 Peeko: Something that could make us even be closer! //Play sound CharacterDialogue
 You: What Peeko? What's your idea? Pleeasee tell me!
 Peeko: Well, what if, you connect me somewhere on a bigger screen? //Play sound CharacterDialogue
+<<set_enabled_in_unity PeekoHappy2 true>>
 Peeko: I could be closer to you! //Play sound CharacterDialogue
 You: What do you mean? Like, plugging you into my TV?
 Peeko: Perhaps? That would be an amazing idea... //Play sound CharacterDIalogue

@@ -2011,11 +2011,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &436650311 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8018827991359549461, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
-  m_PrefabInstance: {fileID: 1859905960}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &498257645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4175,11 +4170,6 @@ Transform:
   - {fileID: 1544894565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1308078068 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7755449919255566671, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
-  m_PrefabInstance: {fileID: 1859905960}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310710213
 GameObject:
   m_ObjectHideFlags: 0
@@ -5340,11 +5330,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b9bb32aadb2294044a02c2cb6ef56ca9, type: 3}
   m_PrefabInstance: {fileID: 1636989831}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1653302139 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6255275369497102702, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
-  m_PrefabInstance: {fileID: 1859905960}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1688873906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5987,6 +5972,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1870765068}
     m_Modifications:
+    - target: {fileID: 398279674348491216, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467054026300166163, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 991644984496050792, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6031,9 +6024,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6255275369497102702, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6973429084326515001, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755449919255566671, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8018827991359549461, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8602097628123125979, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
       propertyPath: m_Name
@@ -7443,15 +7448,15 @@ PrefabInstance:
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: madSound
       value: 
-      objectReference: {fileID: 1653302139}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: sadSound
       value: 
-      objectReference: {fileID: 436650311}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: happySound
       value: 
-      objectReference: {fileID: 1308078068}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: eatingSound
       value: 

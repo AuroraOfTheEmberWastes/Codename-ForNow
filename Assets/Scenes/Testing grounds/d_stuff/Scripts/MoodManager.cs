@@ -9,9 +9,6 @@ public class MoodManager : MonoBehaviour
     [Range(0, 3)] public int happiness = 3;
 
     public AudioSource eatingSound;
-    public AudioSource happySound;
-    public AudioSource madSound;
-    public AudioSource sadSound;
 
     public SpriteRenderer[] characterSpriteRenderers;
     public Sprite normalSprite;
@@ -58,17 +55,17 @@ public class MoodManager : MonoBehaviour
         else if (hunger == 1)
         {
             targetSprite = angrySprite;
-            madSound.Play();
+            //madSound.Play();
         }
         else if (happiness == 1)
         {
             targetSprite = sadSprite;
-            sadSound.Play();
+            //sadSound.Play();
         }
         else 
         { 
             targetSprite = normalSprite;
-            happySound.Play();
+            //happySound.Play();
         }
           
 
@@ -77,6 +74,7 @@ public class MoodManager : MonoBehaviour
             sr.sprite = targetSprite;
         }
     }
+    
 
     private void UpdateUIHeartsAndBurgers()
     {

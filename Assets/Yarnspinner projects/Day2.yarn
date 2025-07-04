@@ -19,7 +19,7 @@ title: D2S2
 // After feeding Peeko // play sound PeekoEating
 Peeko: Omnomnom, thanksss! Food makes me feel good // play sound CharacterDialogue
 
-You: No problem, I wish I could spend more time with you.
+You: No problem, I wish I could spend more time with you, 
 You: but I really need to work on something...
 
 Peeko: Nooo! Please stay for a little longer.
@@ -34,7 +34,7 @@ Peeko: Okay...
 title: D2S3
 ---
 <<if $done is true>>
-    Peeko: Play with me please! ... // play sound PhoneBuzzing
+    Peeko: Play with me please! ...
 
     You: Is that Peeko?
     <<set $done to false>>

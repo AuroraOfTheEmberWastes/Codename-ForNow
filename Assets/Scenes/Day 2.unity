@@ -6102,7 +6102,7 @@ PrefabInstance:
       objectReference: {fileID: 562526422}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: hunger
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: madSound

@@ -61,14 +61,14 @@ public class RockPaperScissorsManager : MonoBehaviour
         tamagotchiRenderer.sprite = GetSprite(opponentChoice);
         resultText.text += $"\nTamagotchi chose {opponentChoice.ToString()}...";
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
 
         ResolveRound(playerChoice, opponentChoice);
         UpdateScore();
 
         if (!gameOver)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1.0f);
             resultText.text = "Make your move.";
             tamagotchiRenderer.sprite = idleSprite;
             EnableButtons();

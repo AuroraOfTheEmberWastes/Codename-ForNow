@@ -1,119 +1,109 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class MoodManager : MonoBehaviour
 {
-    [Range(0, 3)] public int hunger = 3;
-    [Range(0, 3)] public int happiness = 3;
+    [Header("Mood Variables")]
+    public int hunger = 0;
+    public int happiness = 0;
 
-    public SpriteRenderer[] characterSpriteRenderers;
+    [Header("Mood Sprites")]
     public Sprite normalSprite;
     public Sprite angrySprite;
     public Sprite sadSprite;
     public Sprite conflictedSprite;
-    public Sprite eatingSprite;
 
-    public RawImage[] heartRawImages;
-    public RawImage[] burgerRawImages;
+    [Header("Sprite Renderers")]
+    public List<SpriteRenderer> characterSpriteRenderers = new List<SpriteRenderer>();
+
+    [Header("Feeding Settings")]
+    public float feedDuration = 3f;
+    public GameObject foodObject;
+    public Transform foodSpawnPoint;
+
+    [HideInInspector]
+    public bool overrideSprite = false;
 
     private bool feedRunning = false;
-    private bool canFeed = true;
-    public bool storymode = false;
-    public InteractionObject D2S2;
 
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.H)) GetHungry();
-        if (Input.GetKeyDown(KeyCode.J)) EatFood();
-        if (Input.GetKeyDown(KeyCode.K)) GetSad();
-        if (Input.GetKeyDown(KeyCode.L)) CheerUp();
-
         UpdateMoodSprite();
-        UpdateUIHeartsAndBurgers();
     }
 
-    public void GetHungry() => hunger = Mathf.Max(hunger - 1, 0);
-    public void EatFood() => hunger = Mathf.Min(hunger + 1, 3);
-    public void GetSad() => happiness = Mathf.Max(happiness - 1, 0);
-    public void CheerUp() => happiness = Mathf.Min(happiness + 1, 3);
+    public void IncreaseHunger()
+    {
+        hunger = Mathf.Clamp(hunger + 1, 0, 1);
+        UpdateMoodSprite();
+    }
 
-    private void UpdateMoodSprite()
+    public void DecreaseHunger()
+    {
+        hunger = Mathf.Clamp(hunger - 1, 0, 1);
+        UpdateMoodSprite();
+    }
+
+    public void IncreaseHappiness()
+    {
+        happiness = Mathf.Clamp(happiness + 1, 0, 1);
+        UpdateMoodSprite();
+    }
+
+    public void DecreaseHappiness()
+    {
+        happiness = Mathf.Clamp(happiness - 1, 0, 1);
+        UpdateMoodSprite();
+    }
+
+    public void Feed()
     {
         if (!feedRunning)
         {
-            Sprite targetSprite;
-
-            if (hunger == 1 && happiness == 1)
-                targetSprite = conflictedSprite;
-            else if (hunger == 1)
-                targetSprite = angrySprite;
-            else if (happiness == 1)
-                targetSprite = sadSprite;
-            else
-                targetSprite = normalSprite;
-
-            foreach (var sr in characterSpriteRenderers)
-            {
-                sr.sprite = targetSprite;
-            }
+            StartCoroutine(FeedRoutine());
         }
     }
 
-    private void UpdateUIHeartsAndBurgers()
-    {
-        for (int i = 0; i < heartRawImages.Length; i++)
-        {
-            heartRawImages[i].gameObject.SetActive(i < happiness);
-        }
-
-        for (int i = 0; i < burgerRawImages.Length; i++)
-        {
-            burgerRawImages[i].gameObject.SetActive(i < hunger);
-        }
-    }
-
-    public void FeedTama()
-    {
-        Debug.Log("FeedTama() called - canFeed: " + canFeed);
-
-        if (canFeed)
-        {
-            StartCoroutine(FeedTamaRoutine());
-        }
-        else
-        {
-            Debug.Log("cant feed yet luh twin");
-        }
-    }
-
-    private IEnumerator FeedTamaRoutine()
+    private IEnumerator FeedRoutine()
     {
         feedRunning = true;
-        canFeed = false;
 
-        foreach (var sr in characterSpriteRenderers)
+        GameObject spawnedFood = null;
+        if (foodObject != null && foodSpawnPoint != null)
         {
-            sr.sprite = eatingSprite;
+            spawnedFood = Instantiate(foodObject, foodSpawnPoint.position, Quaternion.identity);
         }
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(feedDuration);
 
-        foreach (var sr in characterSpriteRenderers)
+        if (spawnedFood != null)
         {
-            sr.sprite = normalSprite;
+            Destroy(spawnedFood);
         }
+
+        DecreaseHunger();
 
         feedRunning = false;
-        hunger = Mathf.Min(hunger + 1, 3);
-        Debug.Log("tama fed.");
-        if (storymode)
-        {
-            D2S2.OnEventTrigger();
-        }
+    }
 
-        yield return new WaitForSeconds(30f);
-        canFeed = true;
-        Debug.Log("cooldown done");
+    private void UpdateMoodSprite()
+    {
+        if (overrideSprite || feedRunning) return;
+
+        Sprite targetSprite;
+
+        if (hunger == 1 && happiness == 1)
+            targetSprite = conflictedSprite;
+        else if (hunger == 1)
+            targetSprite = angrySprite;
+        else if (happiness == 1)
+            targetSprite = sadSprite;
+        else
+            targetSprite = normalSprite;
+
+        foreach (var sr in characterSpriteRenderers)
+        {
+            sr.sprite = targetSprite;
+        }
     }
 }

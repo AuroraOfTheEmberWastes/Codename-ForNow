@@ -1,0 +1,42 @@
+﻿title: D3S1
+---
+You: Ugh, I'm so tired
+[i]BZZZTT...[/i]
+[i]While still trying to get out of bed and having your eyes half closed you respond...[/i]
+You: Wait! Peeko, I'm here don't worry...
+===
+
+title: D3S2
+---
+Peeko: Hey! Where have you been! I'm starving
+
+You: Ohh Peeko, please don't be mad, I accidentaly fell asleep!
+Peeko: Feed me and play with me!
+===
+
+title: D3S3
+---
+Peeko: Ah, that's way better!
+Peeko: You know, I came up with an amazing idea! 
+Peeko: Something that could make us even be closer!
+You: What Peeko? What's your idea? Pleeasee tell me!
+Peeko: Well, what if, you connect me somewhere on a bigger screen?
+Peeko: I could be closer to you!
+You: What do you mean? Like, plugging you into my TV?
+Peeko: Perhaps? That would be an amazing idea...
+===
+
+title: D3S4
+---
+Peeko: Wow! This space... It's way bigger! And I'm so close to you
+You: Yay! Your idea worked out really well.
+Peeko: I'm a little tired, I want to sleep... zzz
+You: All that work made me a little tired too, I should lay down for a second...
+
+<<load_scene "Day 16 (day)">>
+===
+
+title: TVCables
+---
+<<set_enabled_in_unity CableGame true>>
+===

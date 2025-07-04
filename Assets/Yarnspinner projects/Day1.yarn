@@ -11,53 +11,51 @@ title: Story1
 <<wait 3>>
 <<set_enabled_in_unity PeekoHatch false>>
 <<set_enabled_in_unity BedTamagotchi true>>
-The egg hatches and there it is, your new friend.
-Hi! I'm Peeko, your new best friend!
-You can play with me, talk with me and I'll always be there for you!
 
-Hi, I'm glad to meet you! 
-We are going to have so much fun together!
+[i]The egg hatches and there it is, your new friend.[i/]
+Peeko: Hi! I'm Peeko, your new best friend!
+Peeko:You can play with me, talk with me and I'll always be there for you!
 
-You're feeling a little excited
+You: Hi, I'm glad to meet you! 
+Peeko: We are going to have so much fun together!
+[i]You're feeling a little excited[/i]
 
-Hi Peeko, I'm happy to have you as a friend, 
-but what can I really do with you?
+You: Hi Peeko, I'm happy to have you as a friend, 
+You:but what can I really do with you?
 
-I'll show you around!
-Click on the Burger icon to head to the kitchen.
+Peeko: I'll show you around!
+[i]Click on the Burger icon to head to the kitchen.[/i]
 
-In the top left corner, you can see how hungry I am. 
-You will have to feed me when I get hungry. Let's try it out!
+Peeko: In the top left corner, you can see how hungry I am. 
+Peeko: You will have to feed me when I get hungry. 
+Peeko: Let's try it out!
 ===
 
 title: Story2
 ---
-With a mouthful Hmmh Thank you! I loveee burgers
+Peeko: Hmmh Thank you! I loveee burgers
+[i]After Peeko is done eating suddenly it's happiness is low.[/i]
+You: Oh no Peeko, What is wrong? Please don't be sad! 
+You: How can I make you happy?
 
-After Peeko is done eating suddenly it's happiness is low.
-
-Oh no Peeko, What is wrong? Please don't be sad! 
-How can I make you happy?
-
-You can play with me to make me happy...
-
-Go to the play room and play a game with me.
+Peeko: You can play with me to make me happy...
+Peeko: Go to the play room and play a game with me.
 ===
 
 title: Story3
 ---
-Yay! Thank you, I had so much fun!
+Peeko: Yay! Thank you, I had so much fun!
 
-Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that we can play again!
+You: Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that we can play again!
 
-Aww, okay, take a good rest!
+Peeko: Aww, okay, take a good rest!
 
-Put your phone away and start heading towards your bed.
+[i]Put your phone away and start heading towards your bed.[/i]
 <<set_enabled_in_unity Bed true>>
 ===
 
 title: bed
 ---
-I'll just lay down for a second...
+[i]I'll just lay down for a second...[/i]
 <<load_scene "Day 2">>
 ===

@@ -44,11 +44,5 @@ You: Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after t
 Peeko: Aww, okay, take a good rest! //Play sound CharacterDialogue
 
 [i]Put your phone away and start heading towards your bed.[/i]
-<<set_enabled_in_unity Bed true>>
-===
-
-title: bed
----
-[i]I'll just lay down for a second...[/i]
 <<load_scene "Day 2">>
 ===

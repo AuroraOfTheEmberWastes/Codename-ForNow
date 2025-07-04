@@ -167,7 +167,7 @@ MonoBehaviour:
     m_ActionId: 79dc09a2-16ae-4908-b7de-2c72ce1b102f
     m_ActionName: 'IRL/Touch[/Simulated Touchscreen/press,/Device Simulator Touchscreen/press]'
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Touch
   m_DefaultActionMap: IRL
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

@@ -5610,29 +5610,41 @@ PrefabInstance:
       value: PhoneStuff
       objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: eatingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2353cc63613a100488b6223731a16d59, type: 3}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: heartRawImages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: burgerRawImages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'heartRawImages.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 73830455}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'heartRawImages.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 520641574}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'heartRawImages.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 181570609}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'burgerRawImages.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 10709708}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'burgerRawImages.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2130536017}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'burgerRawImages.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1838898336}
     - target: {fileID: 5018544214183711019, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: movementStuff
       value: 

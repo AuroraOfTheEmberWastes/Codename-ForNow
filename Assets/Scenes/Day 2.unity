@@ -5624,29 +5624,53 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: eatingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2353cc63613a100488b6223731a16d59, type: 3}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: heartRawImages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: burgerRawImages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'heartRawImages.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848914547}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'heartRawImages.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1281182783}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'heartRawImages.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1371825881}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: 'heartRawImages.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1848914547}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: 'heartRawImages.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1281182783}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: 'heartRawImages.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1371825881}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'burgerRawImages.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1164764413}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'burgerRawImages.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 86181096}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: 'burgerRawImages.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1066890125}
     - target: {fileID: 4950047504174111034, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: m_text
       value: '0 : 0'

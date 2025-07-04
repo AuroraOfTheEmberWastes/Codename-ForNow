@@ -5725,9 +5725,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1402851316}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: hunger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: happiness
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: storymode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: eatingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2353cc63613a100488b6223731a16d59, type: 3}
     - target: {fileID: 4950047504174111034, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: m_text
       value: '0 : 0'

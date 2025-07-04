@@ -188,6 +188,7 @@ MonoBehaviour:
   enableObj:
   - {fileID: 7841568769843899580}
   - {fileID: 6630198087424286027}
+  - {fileID: 5252918830049488703}
   disableObj:
   - {fileID: 792807186405956468}
   D2S4: {fileID: 0}
@@ -1747,7 +1748,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1e7b3f0470e71b4fa91cae2de9fb295, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e109abf9efba4734986677c127a68794, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8658,7 +8659,8 @@ MonoBehaviour:
   dialogueDisable: []
   playRPSenable:
   - {fileID: 792807186405956468}
-  playRPSdisable: []
+  playRPSdisable:
+  - {fileID: 5252918830049488703}
 --- !u!1 &6199279999192786256
 GameObject:
   m_ObjectHideFlags: 0
@@ -9533,18 +9535,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hunger: 3
   happiness: 3
-  normalSprite: {fileID: 21300000, guid: f3ff68397ed86f7498917a0f0a7f2589, type: 3}
-  angrySprite: {fileID: 21300000, guid: 6b5bd7ec674c28e419f7d96e0cbe06d8, type: 3}
-  sadSprite: {fileID: 21300000, guid: 43d221ae8041f6f45ac5c52746bf7d35, type: 3}
-  conflictedSprite: {fileID: 21300000, guid: e8920d230763f2c46ac05e2bd90208f6, type: 3}
   characterSpriteRenderers:
   - {fileID: 6561699285220305508}
   - {fileID: 9035300964887618568}
   - {fileID: 3753970189460207205}
   - {fileID: 4943809334334570623}
-  feedDuration: 3
-  foodObject: {fileID: 0}
-  foodSpawnPoint: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: f3ff68397ed86f7498917a0f0a7f2589, type: 3}
+  angrySprite: {fileID: 21300000, guid: 6b5bd7ec674c28e419f7d96e0cbe06d8, type: 3}
+  sadSprite: {fileID: 21300000, guid: 43d221ae8041f6f45ac5c52746bf7d35, type: 3}
+  conflictedSprite: {fileID: 21300000, guid: e8920d230763f2c46ac05e2bd90208f6, type: 3}
+  eatingSprite: {fileID: 0}
+  heartRawImages:
+  - {fileID: 4277252429174565891}
+  - {fileID: 3233930270925346602}
+  - {fileID: 3069117388021108879}
+  burgerRawImages:
+  - {fileID: 5053633525667708715}
+  - {fileID: 9018433278478257058}
+  - {fileID: 2705996789360736342}
+  storymode: 0
+  D2S2: {fileID: 0}
   overrideSprite: 0
 --- !u!114 &7573864269590627298
 MonoBehaviour:

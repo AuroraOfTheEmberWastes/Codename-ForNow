@@ -21,6 +21,49 @@ Peeko: Well...enough talking, you have to help me now!!
 You: Help you...how? What was the weird message even about?
 Peeko: What did you not understand about it?! 
 Peeko: It clearly spelled 'LET ME OUT' so that's what you need to do. 
+[i]You stared at your phone screen dumbfounded.[/i]
+You: Peeko...you're a virtual pet. I- how could I possibly let you out.
+// ANGRY PEEKO ANIMATION
+[i]Peeko's face visibly became angrier.[/i]
+Peeko:I dont want to be virtual! 
+Peeko: I want to get out, to live in your world. 
+Peeko: Haven't you noticed?! Your apartment has been different lately.
+You: So, that was not an hallucination??
+Peeko: I have been trying to fuse our minds together, in preparation for the last step. 
+You: Fuse our minds? You've been messing with my brain?
+Peeko: It's all for the good of our friendship, trust me. 
 
+Peeko: [b]Let me take over your body, that way we can be together forever. We'll never have to be apart again.[/b]
+You:
+->Oh...that sounds nice. I won't have to be lonely again, because I'll always have you Peeko.
+Peeko:Finally you understood. Let's get to work then. 
+Peeko: Remember the microwave you smashed? 
+Peeko:Use the cable that was inside, 
+Peeko: carefully make an incition in your arm and connect yourself with the cable to the phone.
+Peeko: I can pass through to your brain that way.
+// OBJECTIVE: pick up the cable at the microwave
+->What? Fuse our minds? Take over my body? No-I can't- this is crazy!
+Peeko: So you don't want to do this for me? 
+Peeko: You want me gone is that it? You hate me! 
+Peeko: You've always hated me, I knew it!
+You: I thought you were normal! I was just looking for an app to kill time, and chase off the loneliness. 
+You: I can't do what you're asking me to. 
+You: [b]I'm my own person, you're an app.[/b]
+[i]Find a way to get rid of Peeko[/i]
+===
 
+// PICKUP MICROWAVE CABLE
+title: Bad
+---
+[i]You did as Peeko told you, desperate to be with him at all times, 
+to not go back to the loneliness you felt before.[/i]
+===
+
+// PICKUP HAMMER 
+title: Good
+---
+[i]You took ahold of the hammer and with a swift glance at your phone you made your decision. 
+You set your phone on the table and smashed with the hammer without hesitation. 
+You must destroy all the electronics in your home to stop Peeko. 
+After smashing your phone, You didn't have to worry about a threatening creature taking over you anymore, [b]you won.[/b][/i]
 ===

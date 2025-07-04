@@ -21,11 +21,8 @@ public class PathManager : MonoBehaviour
     {
         if (hasWon) return;
 
-#if UNITY_EDITOR || UNITY_STANDALONE
         HandleMouseInput();
-#else
         HandleTouchInput();
-#endif
     }
 
     void HandleMouseInput()

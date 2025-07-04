@@ -1,10 +1,10 @@
 title: StartD16N
 ---
-[i]You wake up from a really loud noise[/i]
-Peeko: YOU! 
-Peeko: COME HERE
-Peeko: I NEED YOU
-Peeko: [b]NOW[/b]
+[i]You wake up from a really loud noise[/i] //play sound microwave smashing
+Peeko: YOU! //play sound CharacterDialogue
+Peeko: COME HERE //play sound CharacterDialogue
+Peeko: I NEED YOU //play sound CharacterDialogue
+Peeko: [b]NOW[/b] //play sound CharacterDialogue
 <<wait 1>>
 <<set_enabled_in_unity "Start Cover" false>>
 
@@ -16,16 +16,16 @@ You: I'm just tired, let's finish this quickly and go back to sleep...
 
 title: D16N1
 ---
-Peeko: WHAT TOOK YOU SO LONG?!
+Peeko: WHAT TOOK YOU SO LONG?! //play sound CharacterDialogue
 You: I'm so sorry Peeko! I was sleeping and it is the middle of the night...
 ===
 
 title: D16N2
 ---
-Peeko: I'm sorry for attacking you in the middle of the night,
-Peeko: please forgive me
-Peeko: I like you so much, it's just, it's soooo empty and lonely in here, 
-Peeko: I wish I could be there with you
+Peeko: I'm sorry for attacking you in the middle of the night, //play sound CharacterDialogue
+Peeko: please forgive me //play sound CharacterDialogue
+Peeko: I like you so much, it's just, it's soooo empty and lonely in here, //play sound CharacterDialogue
+Peeko: I wish I could be there with you //play sound CharacterDialogue
 
 You: I know Peeko, I wish I could take you away from that dull place...
 [i]You were so tired that you fell right asleep after talking to Peeko[/i]

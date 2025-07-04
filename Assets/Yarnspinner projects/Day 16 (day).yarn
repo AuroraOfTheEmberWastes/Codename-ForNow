@@ -5,7 +5,7 @@ title: StartD16
 
 // PLAY buzzing sound
 <<set_enabled_in_unity "PhoneBuzzing" true>>
-[i]BZZZTT...[/i]
+[i]BZZZTT...[/i] 
 [i]Your phone is buzzing again...[/i]
 ===
 
@@ -13,7 +13,7 @@ title: StartD16
 title: D16D1
 ---
 <<set_enabled_in_unity "CharacterDialogue" true>>
-Peeko: You were gone for so long...
+Peeko: You were gone for so long... //Play sound CharacterDialogue
 //Peeko Happiness is low so play RPS
 ===
 
@@ -47,7 +47,7 @@ title: D16D4
 ---
 [i]You pick up your phone[/i]
 
-Peeko: Ahh I'm soooo hungryyyy
+Peeko: Ahh I'm soooo hungryyyy //Play sound CharacterDialogue
 
 You: Peeko? Please tell me what happened?
 
@@ -58,12 +58,12 @@ You: Peeko? Please tell me what happened?
 
 title: D16D5
 ---
-Peeko: Did you like yours?
+Peeko: Did you like yours? //Play sound CharacterDialogue
 
 You: What?
 You: Did I like what?
 
-Peeko: Your burger... 
+Peeko: Your burger...  //Play sound CharacterDialogue
 
 You: How did you-
 [i]Peeko seems to not interact at all[/i]

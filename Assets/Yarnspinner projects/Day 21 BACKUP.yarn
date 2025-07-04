@@ -1,8 +1,7 @@
 title: StartD21
 ---
 <<wait  2>>
-<<set_enabled_in_unity "Start Cover" false>>
-
+<<set_enabled_in_unity "NEXT DAY" false>>
 [i]Your eyes open slowly, while pain throbs through your body. [/i]
 [i]Your arms seem to be sore.[/i]
 [i]Memories flood your mind, and with a slow move you sit up from the bed[/i]

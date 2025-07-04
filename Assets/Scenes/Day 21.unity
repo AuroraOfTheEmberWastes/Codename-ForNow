@@ -4904,6 +4904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhoneStuff
       objectReference: {fileID: 0}
+    - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
+      propertyPath: eatingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2353cc63613a100488b6223731a16d59, type: 3}
     - target: {fileID: 5018544214183711019, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: interactionObject
       value: 

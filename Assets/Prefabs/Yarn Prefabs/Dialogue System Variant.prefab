@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3348187030748039489}
   - component: {fileID: 152554230497668523}
+  - component: {fileID: 6657525284392957744}
   m_Layer: 0
   m_Name: DialogueTapTrigger
   m_TagString: Untagged
@@ -180,6 +181,18 @@ MonoBehaviour:
   m_DefaultActionMap: IRL
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6657525284392957744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7783315783278874564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc02011d75ba1764581dc8ff4cd58909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2117699124594191899
 PrefabInstance:
   m_ObjectHideFlags: 0

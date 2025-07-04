@@ -11,46 +11,46 @@ title: Story1
 <<wait 3>>
 <<set_enabled_in_unity PeekoHatch false>>
 <<set_enabled_in_unity BedTamagotchi true>>
-The egg hatches and there it is, your new friend.
-Hi! I'm Peeko, your new best friend!
-You can play with me, talk with me and I'll always be there for you!
+The egg hatches and there it is, your new friend. //Play sounds EggHatching
+Hi! I'm Peeko, your new best friend! //Play sound CharacterDialogue
+You can play with me, talk with me and I'll always be there for you! //Play sound CharacterDialogue
 
-Hi, I'm glad to meet you! 
-We are going to have so much fun together!
+Hi, I'm glad to meet you! //Play sound CharacterDialogue
+We are going to have so much fun together! //Play sound CharacterDialogue
 
 You're feeling a little excited
 
 Hi Peeko, I'm happy to have you as a friend, 
 but what can I really do with you?
 
-I'll show you around!
-Click on the Burger icon to head to the kitchen.
+I'll show you around! //Play sound CharacterDialogue
+Click on the Burger icon to head to the kitchen. //Play sound CharacterDialogue
 
-In the top left corner, you can see how hungry I am. 
-You will have to feed me when I get hungry. Let's try it out!
+In the top left corner, you can see how hungry I am. //Play sound CharacterDialogue
+You will have to feed me when I get hungry. Let's try it out! //Play sound CharacterDialogue
 ===
 
 title: Story2
 ---
-With a mouthful Hmmh Thank you! I loveee burgers
+With a mouthful Hmmh Thank you! I loveee burgers //Play sound PeekoEating, play sound CharacterDIalogue
 
 After Peeko is done eating suddenly it's happiness is low.
 
 Oh no Peeko, What is wrong? Please don't be sad! 
 How can I make you happy?
 
-You can play with me to make me happy...
+You can play with me to make me happy... //Play sound CharacterDialogue
 
-Go to the play room and play a game with me.
+Go to the play room and play a game with me. //Play sound CharacterDIalogue
 ===
 
 title: Story3
 ---
-Yay! Thank you, I had so much fun!
+Yay! Thank you, I had so much fun! //Play sound CharacterDialogue
 
 Me too, Peeko! I'm a little tired now, So, I'll rest for a bit. But after that we can play again!
 
-Aww, okay, take a good rest!
+Aww, okay, take a good rest! //Play sound CharacterDialogue
 
 Put your phone away and start heading towards your bed.
 <<set_enabled_in_unity Bed true>>

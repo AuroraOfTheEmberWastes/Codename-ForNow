@@ -7,6 +7,7 @@ public class MoodManager : MonoBehaviour
 {
     [Range(0, 3)] public int hunger = 3;
     [Range(0, 3)] public int happiness = 3;
+    public AudioSource eatingSound;
 
     public SpriteRenderer[] characterSpriteRenderers;
     public Sprite normalSprite;
@@ -110,6 +111,7 @@ public class MoodManager : MonoBehaviour
         feedRunning = false;
         hunger = Mathf.Min(hunger + 1, 3);
         Debug.Log("tama fed.");
+        eatingSound.Play();
         if (storymode)
         {
             D2S2.OnEventTrigger();

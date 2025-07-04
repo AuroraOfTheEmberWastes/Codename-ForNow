@@ -20,7 +20,6 @@ public class RockPaperScissorsManager : MonoBehaviour
     public TMP_Text resultText;
     public TMP_Text scoreText;
     public Button[] choiceButtons;
-    // Removed: public Button playAgainButton;
 
     private int playerScore = 0;
     private int opponentScore = 0;
@@ -32,6 +31,8 @@ public class RockPaperScissorsManager : MonoBehaviour
     public InteractionObject D2S5;
     public bool storymode = false;
     public int timesPlayed = 0;
+
+    public MoodManager moodManager;
 
     void OnEnable()
     {
@@ -47,6 +48,8 @@ public class RockPaperScissorsManager : MonoBehaviour
 
     IEnumerator PlayRound(RPS playerChoice)
     {
+        if (moodManager != null) moodManager.overrideSprite = true;
+
         resultText.text = "You chose " + playerChoice.ToString() + "...";
         tamagotchiRenderer.sprite = idleSprite;
 
@@ -67,6 +70,8 @@ public class RockPaperScissorsManager : MonoBehaviour
             resultText.text = "Make your move.";
             tamagotchiRenderer.sprite = idleSprite;
             EnableButtons();
+
+            if (moodManager != null) moodManager.overrideSprite = false;
         }
     }
 
@@ -110,15 +115,12 @@ public class RockPaperScissorsManager : MonoBehaviour
             if (storymode)
             {
                 if (timesPlayed == 1)
-                {
                     D2S4.OnEventTrigger();
-                }
-                if (timesPlayed == 2)
-                {
-                    //BLACK SCREEN?
+                else if (timesPlayed == 2)
                     D2S5.OnEventTrigger();
-                }
             }
+
+            if (moodManager != null) moodManager.overrideSprite = false;
         }
     }
 
@@ -154,8 +156,9 @@ public class RockPaperScissorsManager : MonoBehaviour
         tamagotchiRenderer.sprite = idleSprite;
         UpdateScore();
         EnableButtons();
-    }
 
+        if (moodManager != null) moodManager.overrideSprite = false;
+    }
 
     private IEnumerator endingGame()
     {

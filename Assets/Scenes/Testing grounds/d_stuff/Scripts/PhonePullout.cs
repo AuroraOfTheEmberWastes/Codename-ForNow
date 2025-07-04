@@ -10,6 +10,7 @@ public class PhonePullout : MonoBehaviour
     public GameObject hungerUI;
     public GameObject happinessUI;
     public GameObject extra;
+    public GameObject cypher;
 
     void Start()
     {
@@ -37,6 +38,10 @@ public class PhonePullout : MonoBehaviour
     private IEnumerator PulloutEnable()
     {
         yield return new WaitForSeconds(1f);
+        if (cypher != null)
+        {
+            cypher.SetActive(true);
+        }
         hungerUI.SetActive(true);
         happinessUI.SetActive(true);
         phoneOffButton.SetActive(true);
@@ -47,6 +52,10 @@ public class PhonePullout : MonoBehaviour
     private IEnumerator PhoneOffEnable()
     {
         yield return new WaitForSeconds(1f);
+        if (cypher != null)
+        {
+            cypher.SetActive(false);
+        }
         phoneOffButton.SetActive(false);
         hungerUI.SetActive(false);
         happinessUI.SetActive(false);

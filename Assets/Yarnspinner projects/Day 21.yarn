@@ -5,27 +5,31 @@ title: StartD21
 
 [i]Your eyes open slowly, while pain throbs through your body. Your arms seem to be sore. [/i]
 [i]Memories flood your mind, and with a slow move you sit up from the bed and walk out to the kitchen. [/i]
-
 ===
 
 // Player interacts with hammer on the dinner table
 title: D21S1
 ---
+<<set_enabled_in_unity "PhoneBuzzing" true>>
 BZZTT //play sound PhoneBuzzing
 You: Must be Peeko.
 Peeko: Heeyyyy! Are you awake yet?!! //play sound CharacterDialogue
 Peeko: You haven't opened my app for three days! I missed you! I was lonely! //play sound CharacterDialogue
+<<set_enabled_in_unity "PeekoSad" true>>
 Peeko: How could you ever do that to me?! //play sound CharacterDialogue
 Peeko: Well...enough talking, you have to help me now!! //play sound CharacterDialogue
 You: Help you...how? What was the weird message even about?
 Peeko: What did you not understand about it?! //play sound CharacterDialogue
+<<set_enabled_in_unity "PeekoMad" true>>
 Peeko: It clearly spelled 'LET ME OUT' so that's what you need to do. //play sound CharacterDialogue
 [i]You stared at your phone screen dumbfounded.[/i]
 You: Peeko...you're a virtual pet. I- how could I possibly let you out.
 // ANGRY PEEKO ANIMATION
 [i]Peeko's face visibly became angrier.[/i]
+<<set_enabled_in_unity "PeekoMad2" true>>
 Peeko:I dont want to be virtual! //play sound CharacterDialogue
 Peeko: I want to get out, to live in your world. //play sound CharacterDialogue
+<<set_enabled_in_unity "PeekoMad3" true>>
 Peeko: Haven't you noticed?! Your apartment has been different lately. //play sound CharacterDialogue
 You: So, that was not an hallucination??
 Peeko: I have been trying to fuse our minds together, in preparation for the last step. //play sound CharacterDialogue
@@ -36,6 +40,7 @@ Peeko: [b]Let me take over your body, that way we can be together forever.[/b] /
 Peeko: [b]We'll never have to be apart again.[/b] //play sound CharacterDialogue
 You:
 ->Oh...that sounds nice. I won't have to be lonely again, because I'll always have you Peeko.
+    <<set_enabled_in_unity "PeekoHappy" true>>
     Peeko:Finally you understood. Let's get to work then. //play sound CharacterDialogue
     Peeko: Remember the microwave you smashed? //play sound CharacterDialogue
     Peeko:Use the cable that was inside, //play sound CharacterDialogue
@@ -44,6 +49,7 @@ You:
     <<set_enabled_in_unity "Microwave" true>>
 // OBJECTIVE: pick up the cable at the microwave
 ->What? Fuse our minds? Take over my body? No-I can't- this is crazy!
+    <<set_enabled_in_unity "PeekoMad4" true>>
     Peeko: So you don't want to do this for me? //play sound CharacterDialogue
     Peeko: You want me gone is that it? You hate me! //play sound CharacterDialogue
     Peeko: You've always hated me, I knew it! //play sound CharacterDialogue

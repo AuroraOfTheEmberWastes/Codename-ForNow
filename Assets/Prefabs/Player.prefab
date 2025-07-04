@@ -168,7 +168,7 @@ MonoBehaviour:
     m_ActionName: 'IRL/Touch[/Simulated Touchscreen/press,/Device Simulator Touchscreen/press]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: IRL
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &4668857917798568581
@@ -378,3 +378,8 @@ MonoBehaviour:
   tamagochiOn: 0
   movementTrigger: {fileID: 603893236427307638}
   phonePullout: {fileID: 0}
+  storymode: 0
+  storymode2: 0
+  storyday: 0
+  D2S1: {fileID: 0}
+  D2S2: {fileID: 0}

@@ -2733,6 +2733,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 152554230497668523, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
+      propertyPath: m_DefaultActionMap
+      value: IRL
+      objectReference: {fileID: 0}
     - target: {fileID: 2694818176088049047, guid: 888f3a64d0fd3d946abf3fdd6cf95190, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -5111,21 +5115,6 @@ PrefabInstance:
 --- !u!4 &1367740798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 991644984496050792, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
-  m_PrefabInstance: {fileID: 1367740797}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1367740799 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8018827991359549461, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
-  m_PrefabInstance: {fileID: 1367740797}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1367740800 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6255275369497102702, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
-  m_PrefabInstance: {fileID: 1367740797}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1367740801 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7755449919255566671, guid: 22ee78dd0aefb434895512a56a1d8d69, type: 3}
   m_PrefabInstance: {fileID: 1367740797}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1367740802 stripped
@@ -7790,15 +7779,15 @@ PrefabInstance:
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: madSound
       value: 
-      objectReference: {fileID: 1367740800}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: sadSound
       value: 
-      objectReference: {fileID: 1367740799}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: happySound
       value: 
-      objectReference: {fileID: 1367740801}
+      objectReference: {fileID: 0}
     - target: {fileID: 4625241108488028439, guid: 621bd1dbaef0a4141830a8b43724f07b, type: 3}
       propertyPath: eatingSound
       value: 

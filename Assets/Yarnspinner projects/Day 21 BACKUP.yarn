@@ -1,7 +1,7 @@
 title: StartBACKUP
 ---
 <<wait  2>>
-<<set_enabled_in_unity "NEXT DAY" false>>
+<<set_enabled_in_unity "Start Cover" false>>
 [i]Your eyes open slowly, while pain throbs through your body. [/i]
 [i]Your arms seem to be sore.[/i]
 [i]Memories flood your mind, and with a slow move you sit up from the bed[/i]
@@ -44,7 +44,7 @@ Peeko: [b]We'll never have to be apart again.[/b] //play sound CharacterDialogue
     Peeko:Use the cable that was inside, //play sound CharacterDialogue
     Peeko: carefully make an incition in your arm and connect yourself with the cable to the phone. //play sound CharacterDialogue
     Peeko: I can pass through to your brain that way. //play sound CharacterDialogue
-    <<set_enable_in_unity "Bad Ending" true>>
+    <<set_enabled_in_unity "Bad Ending" true>>
     [i]You did as Peeko told you, desperate to be with him at all times,[/i]
     [i]to not go back to the loneliness you felt before.[/i]
 ->What? Fuse our minds? Take over my body? No-I can't- this is crazy!
@@ -59,7 +59,7 @@ Peeko: [b]We'll never have to be apart again.[/b] //play sound CharacterDialogue
     [i]You took ahold of the hammer and with a swift glance at your phone you made your decision. [/i]
     [i]You set your phone on the table and smashed with the hammer without hesitation. [/i] //play sound SmashingMicrowave
     [i]You must destroy all the electronics in your home to stop Peeko. [/i]
-    <<set_enable_in_unity "Good Ending" true>>
+    <<set_enabled_in_unity "Good Ending" true>>
     [i]After smashing your phone, You didn't have to worry about a threatening creature taking over you anymore, [/i]
     [i][b]you won.[/b][/i]
 ===
